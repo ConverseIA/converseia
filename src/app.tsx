@@ -3,6 +3,8 @@ import { Hero } from './components/hero';
 import { Convertional } from './components/convertional';
 import { AnimatedSection } from './components/animate-section';
 import { Video } from './components/video';
+import { Depoiment } from './components/depoiment';
+import { TechnologyIncorporte } from './components/technology-incorporate';
 
 export const App = () => {
 	return (
@@ -19,6 +21,14 @@ export const App = () => {
 				id="sobre"
 			>
 				<Video />
+			</AnimatedSection>
+
+			<AnimatedSection id="recursos" className="w-full max-w-7xl mx-auto">
+				<Depoiment />
+			</AnimatedSection>
+
+			<AnimatedSection className="size-full bg-dark-primary py-24">
+				<TechnologyIncorporte />
 			</AnimatedSection>
 		</main>
 	);

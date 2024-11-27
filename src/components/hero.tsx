@@ -2,7 +2,7 @@ import { Button } from './ui/button';
 
 export const Hero = () => {
 	return (
-		<div className="p-4 flex">
+		<div className="px-4 flex">
 			<div className="flex flex-col gap-4 justify-center">
 				<h1 className="max-w-xl text-4xl font-bold">
 					Automotize o atendimento desde a recepção de processos, com

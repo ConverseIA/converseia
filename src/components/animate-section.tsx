@@ -7,7 +7,7 @@ import type { ReactNode } from 'react';
 interface AnimatedSectionProps {
 	children: ReactNode;
 	className?: string;
-	id: string;
+	id?: string;
 }
 
 export const AnimatedSection = ({
@@ -20,7 +20,7 @@ export const AnimatedSection = ({
 		initial="hidden"
 		whileInView="visible"
 		viewport={{ once: true, amount: 0.2 }}
-		className={className}
+		className={`py-8 ${className}`}
 		id={id}
 	>
 		{children}

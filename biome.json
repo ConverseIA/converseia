@@ -26,6 +26,10 @@
 			},
 			"correctness": {
 				"noUnusedImports": "warn"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noExplicitAny": "off"
 			}
 		}
 	},
