@@ -26,7 +26,7 @@ export const Depoiment = () => {
 				</div>
 
 				<div className="flex flex-1 w-full flex-col gap-4 base:px-2 md:px-0">
-					<h1 className="text-6xl font-bold">
+					<h1 className="base:text-5xl md:text-6xl font-bold">
 						O que é um <br /> Funcionário 24h?
 					</h1>
 

@@ -74,28 +74,29 @@ export const TechnologyIncorporte = () => {
 						Integração com processos ATIVOS <br /> em todos os tribunais do{' '}
 						<span className="text-secondary">Brasil</span>
 					</h3>
-
-					<div className="bg-white flex gap-6 items-center justify-center rounded-xl max-w-5xl mx-auto w-full">
-						<img
-							src="/brands/pje.svg"
-							alt="pje"
-							className="base:size-20 object-contain md:size-40"
-						/>
-						<img
-							src="/brands/tjpe.svg"
-							alt="tjpe"
-							className="base:size-20 object-contain md:size-40"
-						/>
-						<img
-							src="/brands/tjsp.svg"
-							alt="tjsp"
-							className="base:size-20 object-contain md:size-40"
-						/>
-						<img
-							src="/brands/pjerj.svg"
-							alt="pjerj"
-							className="base:size-20 object-contain md:size-40"
-						/>
+					<div className="base:px-2 md:px-0">
+						<div className="bg-white flex gap-6 items-center justify-center rounded-xl max-w-5xl mx-auto w-full flex-wrap">
+							<img
+								src="/brands/pje.svg"
+								alt="pje"
+								className="base:size-24 object-contain md:size-40"
+							/>
+							<img
+								src="/brands/tjpe.svg"
+								alt="tjpe"
+								className="base:size-24 object-contain md:size-40"
+							/>
+							<img
+								src="/brands/tjsp.svg"
+								alt="tjsp"
+								className="base:size-24 object-contain md:size-40"
+							/>
+							<img
+								src="/brands/pjerj.svg"
+								alt="pjerj"
+								className="base:size-24 object-contain md:size-40"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
