@@ -1,6 +1,6 @@
 export const LINK_NAVIGATE = [
 	{
-		href: '/',
+		href: '#inicio',
 		label: 'Início',
 	},
 	{
