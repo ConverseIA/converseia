@@ -9,7 +9,7 @@ import { Plans } from './components/plans';
 
 export const App = () => {
 	return (
-		<main className=" flex flex-col py-8">
+		<main className="flex w-full flex-col base:py-4 md:py-8">
 			<Header />
 			<AnimatedSection id="inicio" className="max-w-6xl mx-auto">
 				<Hero />

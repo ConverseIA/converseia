@@ -2,7 +2,7 @@ import { Button } from './ui/button';
 
 export const Video = () => {
 	return (
-		<div className="flex flex-col h-full justify-center gap-10">
+		<div className="flex flex-col h-full justify-center gap-10 base:px-2 md:px-0">
 			<h2 className="text-4xl font-bold text-white text-center">
 				Conheça mais sobre o <br /> ConverseIA Direito:
 			</h2>

@@ -47,7 +47,7 @@ export const TechnologyIncorporte = () => {
 					<span className="text-secondary">ConverseIA</span> poderão ocupar:
 				</p>
 
-				<div className="grid grid-cols-4 gap-6 mt-4">
+				<div className="grid base:grid-cols-2 md:grid-cols-4 gap-6 mt-4 base:px-2 md:px-0">
 					{CHARGES_AVALIABLE.map((avaliable: any) => (
 						<div className="flex flex-col gap-6" key={avaliable.title}>
 							<div className="bg-secondary py-1.5 px-2 rounded w-fit text-center leading-5 text-dark-primary font-bold text-xl">
@@ -76,10 +76,26 @@ export const TechnologyIncorporte = () => {
 					</h3>
 
 					<div className="bg-white flex gap-6 items-center justify-center rounded-xl max-w-5xl mx-auto w-full">
-						<img src="/brands/pje.svg" alt="pje" />
-						<img src="/brands/tjpe.svg" alt="tjpe" />
-						<img src="/brands/tjsp.svg" alt="tjsp" />
-						<img src="/brands/pjerj.svg" alt="pjerj" />
+						<img
+							src="/brands/pje.svg"
+							alt="pje"
+							className="base:size-20 object-contain md:size-40"
+						/>
+						<img
+							src="/brands/tjpe.svg"
+							alt="tjpe"
+							className="base:size-20 object-contain md:size-40"
+						/>
+						<img
+							src="/brands/tjsp.svg"
+							alt="tjsp"
+							className="base:size-20 object-contain md:size-40"
+						/>
+						<img
+							src="/brands/pjerj.svg"
+							alt="pjerj"
+							className="base:size-20 object-contain md:size-40"
+						/>
 					</div>
 				</div>
 			</div>

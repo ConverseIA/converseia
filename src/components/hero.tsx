@@ -14,10 +14,12 @@ export const Hero = () => {
 					Agentes de Inteligência Artificial para receber toda a demanda de
 					atendimento do seu escritório
 				</h3>
-				<Button className="max-w-56 h-12 mt-4">Teste 20 dias grátis</Button>
+				<Button className="base:max-w-full md:max-w-56 h-12 mt-4">
+					Teste 20 dias grátis
+				</Button>
 			</div>
 
-			<div>
+			<div className="base:hidden md:flex">
 				<img
 					src="/elements/hero-wrapper.png"
 					alt="hero-wrapper"

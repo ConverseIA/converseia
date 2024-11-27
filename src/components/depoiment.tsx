@@ -5,7 +5,7 @@ export const Depoiment = () => {
 		<div className="flex flex-col gap-16 items-center">
 			<h2 className="text-4xl font-bold">Depoimentos: </h2>
 
-			<div className="grid grid-cols-2 gap-4">
+			<div className="grid base:grid-cols-1 md:grid-cols-2 base:gap-2 md:gap-4 base:px-2 md:px-0">
 				<CardDepoiment
 					name="Simone Campos"
 					job="Advogada"
@@ -20,12 +20,12 @@ export const Depoiment = () => {
 				/>
 			</div>
 
-			<div className="flex items-center gap-8">
+			<div className="flex base:flex-col md:flex-row items-center gap-8">
 				<div className="flex-1 flex w-full">
 					<img src="/elements/mobile-wrapper.png" alt="mobile-wrapper" />
 				</div>
 
-				<div className="flex flex-1 w-full flex-col gap-4">
+				<div className="flex flex-1 w-full flex-col gap-4 base:px-2 md:px-0">
 					<h1 className="text-6xl font-bold">
 						O que é um <br /> Funcionário 24h?
 					</h1>

@@ -8,7 +8,7 @@ export const Plans = () => {
 				<br /> para você:
 			</h1>
 
-			<div className="grid grid-cols-3 gap-6">
+			<div className="grid base:grid-cols-1 md:grid-cols-3 base:gap-2 md:gap-6">
 				{PLANS_AVALIABLE.map((plans) => (
 					<div
 						className="border-2 border-background bg-gradient-to-b from-primary-light to-primary-dark p-6 flex flex-col gap-3 rounded-xl size-full"
