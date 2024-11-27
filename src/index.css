@@ -36,4 +36,9 @@
   body {
     @apply bg-background text-foreground;
   }
+
+}
+
+.rfm-marquee {
+  gap: 8px;
 }

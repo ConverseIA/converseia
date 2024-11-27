@@ -2,7 +2,7 @@ import { LINK_NAVIGATE } from '@/lib/constants';
 
 export const Header = () => {
 	return (
-		<header className="flex max-h-64 h-full backdrop-blur-sm bg-white py-4 sticky top-4">
+		<header className="flex max-h-64 h-full backdrop-blur-sm  py-4 sticky top-0">
 			<div className="flex w-full justify-between items-center max-w-7xl mx-auto">
 				<div className="">
 					<img src="/elements/logo.svg" alt="logo" />
