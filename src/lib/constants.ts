@@ -73,3 +73,47 @@ export const CHARGES_AVALIABLE = [
 		],
 	},
 ];
+
+export const PLANS_AVALIABLE = [
+	{
+		title: 'Escritório Essencial',
+		price: '799',
+		list: [
+			'5 Atendentes Humanos',
+			'1 Secretária de Inteligência Artificial',
+			'CRM Personalizado para o setor Jurídico',
+			'Business Intelligence para performance dos Agentes de IA',
+			'Multicanais / Ominichannel - Disponibilidade de integrar 1 canal de Whatsapp QR Code, +1 Whatsapp Oficial, +1 do Instagram/Direct',
+			'Até 10 mil contatos',
+			'* Bônus de R$ 300 para consumir em média até 3.000 conversas com seu Agente de IA',
+		],
+	},
+	{
+		title: 'Escritório Avançado',
+		price: '1.890',
+		list: [
+			'10 Atendentes Humanos',
+			'Até 3 Agentes de Artificial - sem consulta de processos',
+			'Módulo de Pesquisas de Satisfação e Acompanhamento do contato (FUP) por IA',
+			'CRM Personalizado para o setor Jurídico > Business Intelligence para performance dos Agentes de IA',
+			'Disponibilidade de integrar 1 canal de Whatsapp QR Code, +1 Whatsapp Oficial, +1 de Instagram/Direct',
+			'Até 25 mil contatos',
+			'* Bônus de R$ 300 para consumir em média até 4.000 conversas com seu Agente de IA',
+		],
+	},
+	{
+		title: 'Escritório de Excelência',
+		price: '2.499',
+		list: [
+			'20 Atendentes Humanos',
+			'Até 5 Agentes de Artificial - incluindo consulta de processos',
+			'Módulo de Pesquisas de Satisfação e Acompanhamento do contato (FUP) por IA',
+			'CRM Personalizado para o setor Jurídico',
+			'Business Intelligence para performance dos Agentes de IA',
+			'Disponibilidade de integrar 1 canal de Whatsapp QR Code, +1 Whatsapp Oficial, +1 de Instagram/Direct',
+			'Até 10 mil contatos',
+			'* Bônus de R$ 300 para consumir em média até 5.000 conversas com seu Agente de IA',
+			'* Bônus de R$ 300 para consumir em média até 800 processos dos clientes do seu escritório',
+		],
+	},
+];
