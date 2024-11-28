@@ -4,8 +4,8 @@ export const Plans = () => {
 	return (
 		<div className="space-y-8">
 			<h1 className="text-white text-center font-bold text-4xl">
-				Escolha o <span className="text-secondary">plano sob medida</span>{' '}
-				<br /> para você:
+				Escolha o <span className="text-secondary">plano sob medida</span> para
+				você:
 			</h1>
 
 			<div className="grid base:grid-cols-1 md:grid-cols-3 base:gap-2 md:gap-6">
