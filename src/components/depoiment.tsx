@@ -7,16 +7,15 @@ export const Depoiment = () => {
 
 			<div className="grid base:grid-cols-1 md:grid-cols-2 base:gap-2 md:gap-4 base:px-2 md:px-0">
 				<CardDepoiment
-					name="Simone Campos"
-					job="Advogada"
-					depoiment="Ferramenta prática, com alto nível de precisão em pesquisas e elaboração de peças! Seu impacto positivo no campo jurídico é inegável, e é notável ver como contribui para o avanço da prática jurídica no Brasil. Parabéns por essa inovação valiosa! Recomendo!"
+					name="Eugenia Belo"
+					job="Assistente Jurídica"
+					depoiment="A funcionalidade das IAs é assustadora, permitindo uma agilidade impressionante no atendimento aos clientes e otimizando a capacidade do escritório. 
+					A plataforma se destaca ao oferecer bons mecanismos, e a integração do CRM é um diferencial significativo, possibilitando o gerenciamento completo do cliente em um único lugar. Gostaria de ter descoberto antes!."
 				/>
 				<CardDepoiment
-					name="Paulo Dantas"
-					job="Advogada Criminalista"
-					depoiment="Fantástico! A inteligência embarcada no ChatADV realmente nos permite poupar muito tempo.
-      Extremamente eficiente e assertivo.
-      RECOMENDO 100%!"
+					name="Maykom Carvalho"
+					job="Advogada Trabalhista"
+					depoiment="Incrível! A inteligência incorporada nos Agentes da ConverseIA é surpreendente. Agora consigo focar em gerir meu escritório."
 				/>
 			</div>
 
@@ -32,11 +31,11 @@ export const Depoiment = () => {
 
 					<div className="space-y-6 font-semibold  base:text-sm md:text-base">
 						<p className="base:text-center md:text-left">
-							É um Agente de Inteligência Artificial, como se você tivesse um
-							"ChatGPT" personificado e especializado para atender seus futuros
-							clientes com habilidades especificas e conteúdos específicos sobre
-							seu escritório e sua atuação jurídica. Ele trabalha 24h por dia
-							para você.
+							Este é um Agente de Inteligência Artificial personalizado, 
+							Como um "ChatGPT" adaptado exclusivamente para atender seus futuros
+							e atuais clientes. Ele contém conteúdos específicos sobre
+							seu escritório e sua atuação jurídica, garantindo disponibilidade,
+							24h por dia e resposta é imediata.
 						</p>
 
 						<div className="flex items-center gap-2">

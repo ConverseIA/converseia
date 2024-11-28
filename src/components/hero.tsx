@@ -5,7 +5,7 @@ export const Hero = () => {
 		<div className="px-4 flex base:flex-col-reverse md:flex-row">
 			<div className="flex flex-col gap-4 justify-center base:items-center md:items-start base:text-center md:text-left">
 				<h1 className="max-w-xl text-4xl font-bold ">
-					Automotize o atendimento desde a recepção de processos, com
+					Automotize o atendimento com
 					funcionários de IA que trabalham{' '}
 					<span className="text-primary">24h por dia.</span>
 				</h1>
