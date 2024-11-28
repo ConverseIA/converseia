@@ -3,13 +3,17 @@ import { DrawerMobile } from './drawer-mobile';
 
 export const Header = () => {
 	return (
-		<header className="flex w-full max-h-64 h-full backdrop-blur-sm py-4 sticky  top-0 z-10 base:px-2 md:px-0">
+		<header className="flex w-full max-h-64 h-full backdrop-blur-sm py-4 sticky top-0 z-10 px-2">
 			<div className="flex w-full justify-between items-center max-w-7xl mx-auto gap-3">
 				<div className="base:flex md:hidden">
 					<DrawerMobile />
 				</div>
 				<div className="flex flex-col items-center leading-[0.5px]">
-					<img src="/elements/logo.png" className="max-w-64" alt="logo" />
+					<img
+						src="/elements/logo.png"
+						className="base:max-w-40 md:max-w-64"
+						alt="logo"
+					/>
 				</div>
 
 				<nav className="flex gap-8">
