@@ -95,7 +95,7 @@ export const PLANS_AVALIABLE = [
 			'10 Usuários',
 			'2 Agentes de IA (Secretária + SDR)',
 			'3 Módulos - (Agendamento automático + FUP + NPS)',
-			'CRM Personalizado para o setor Jurídico,
+			'CRM Personalizado para o setor Jurídico',
 			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
 			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
 			'Até 25 mil contatos',
@@ -108,7 +108,7 @@ export const PLANS_AVALIABLE = [
 		list: [
 			'20 Usuários',
 			'3 Agentes de Artificial',
-			'5 Módulos - (Agendamento automático + FUP Avançado + NPS) '
+			'5 Módulos - (Agendamento automático + FUP Avançado + NPS)',
 			'Agendamento automático',
 			'Consulta de processos',
 			'CRM Personalizado para o setor Jurídico',
