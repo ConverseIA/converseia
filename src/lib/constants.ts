@@ -99,7 +99,8 @@ export const PLANS_AVALIABLE = [
 			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
 			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
 			'Até 25 mil contatos',
-			'* Bônus de R$ 300 para até 3.000 conversas com seu Agente de IA',		],
+			'* Bônus de R$ 300 para até 3.000 conversas com seu Agente de IA',		
+		],
 	},
 	{
 		title: 'Escritório de Excelência',
