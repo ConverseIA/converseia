@@ -3,7 +3,7 @@ import { CardDepoiment } from './card-depoiment';
 export const Depoiment = () => {
 	return (
 		<div className="flex flex-col gap-16 items-center">
-			<h2 className="text-4xl font-bold">Depoimentos: </h2>
+			<h2 className="text-4xl font-bold">Depoimentos</h2>
 
 			<div className="grid base:grid-cols-1 md:grid-cols-2 base:gap-2 md:gap-4 base:px-2 md:px-0">
 				<CardDepoiment
@@ -21,17 +21,17 @@ export const Depoiment = () => {
 			</div>
 
 			<div className="flex base:flex-col md:flex-row items-center gap-8">
-				<div className="flex-1 flex w-full">
+				<div className="flex-1 flex size-full">
 					<img src="/elements/mobile-wrapper.png" alt="mobile-wrapper" />
 				</div>
 
 				<div className="flex flex-1 w-full flex-col gap-4 base:px-2 md:px-0">
-					<h1 className="base:text-5xl md:text-6xl font-bold">
+					<h1 className="base:text-4xl md:text-6xl font-bold base:text-center md:text-left">
 						O que é um <br /> Funcionário 24h?
 					</h1>
 
-					<div className="space-y-6 font-semibold">
-						<p>
+					<div className="space-y-6 font-semibold  base:text-sm md:text-base">
+						<p className="base:text-center md:text-left">
 							É um Agente de Inteligência Artificial, como se você tivesse um
 							"ChatGPT" personificado e especializado para atender seus futuros
 							clientes com habilidades especificas e conteúdos específicos sobre

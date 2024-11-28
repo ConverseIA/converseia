@@ -8,8 +8,9 @@ export const Header = () => {
 				<div className="base:flex md:hidden">
 					<DrawerMobile />
 				</div>
-				<div className="">
+				<div className="flex flex-col items-center leading-[0.5px]">
 					<img src="/elements/logo.svg" alt="logo" />
+					<span>Direito</span>
 				</div>
 
 				<nav className="flex gap-8">
