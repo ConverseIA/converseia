@@ -35,7 +35,7 @@ export const CHARGES_AVALIABLE = [
 		list: [
 			'Compreende a demanda inicial',
 			'Encaminha para o setor ou Agente de IA responsável',
-			'Agenda Reunião, Cancela e Remarcar',
+			'Agenda, Cancela e Remarcar Reuniões',
 			'Organiza a Agenda da Equipe',
 			'Encaminha para o humano quando necessário',
 		],
