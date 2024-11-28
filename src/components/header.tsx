@@ -9,8 +9,7 @@ export const Header = () => {
 					<DrawerMobile />
 				</div>
 				<div className="flex flex-col items-center leading-[0.5px]">
-					<img src="/elements/logo.svg" alt="logo" />
-					<span>Direito</span>
+					<img src="/elements/logo.png" className="max-w-64" alt="logo" />
 				</div>
 
 				<nav className="flex gap-8">
