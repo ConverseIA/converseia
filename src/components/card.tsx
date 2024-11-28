@@ -11,6 +11,8 @@ export const Card = ({ hightlight, title }: ICard) => {
 					{title}
 				</h4>
 				<h2 className="text-6xl font-black text-primary">{hightlight}</h2>
+
+				<span className="text-xl text-center">Dos atendimentos</span>
 			</div>
 		</div>
 	);
