@@ -73,7 +73,7 @@ export const FormContact = () => {
 
 	return (
 		<div className="flex flex-col w-full items-center gap-4 px-4">
-			<h1 className="text-3xl font-bold">Se inscreve na nossa fila de espera</h1>
+			<h1 className="text-3xl font-bold">Inscreva-se na nossa fila de espera</h1>
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(handleSendContact)}

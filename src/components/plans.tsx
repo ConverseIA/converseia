@@ -18,7 +18,7 @@ export const Plans = () => {
 						>
 							<h3 className="text-center font-bold text-4xl">{plans.title}</h3>
 							<h4 className="text-center text-2xl font-semibold">
-								R$ {plans.price}/mês
+								R$ {plans.price}/mês 
 							</h4>
 							<div className="font-semibold">
 								{plans.list?.map((charge: any, index: any) => (
