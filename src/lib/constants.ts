@@ -1,26 +1,3 @@
-export const LINK_NAVIGATE = [
-	{
-		href: '#inicio',
-		label: 'Início',
-	},
-	{
-		href: '#sobre',
-		label: 'Sobre',
-	},
-	{
-		href: '#recursos',
-		label: 'Recursos',
-	},
-	{
-		href: '#planos',
-		label: 'Planos',
-	},
-	{
-		href: '#afiliados',
-		label: 'Afiliados',
-	},
-];
-
 export function getInitials(name: string): string {
 	// Split the name into words
 	const words = name.split(' ');
@@ -121,9 +98,35 @@ export const PLANS_AVALIABLE = [
 	},
 ];
 
-export const LINK_CPA_WHATSAPP =
+export const LINK_CTA_WHATSAPP =
 	'https://wa.me/5581982128625?text=Gostaria+de+saber+mais+sobre+a+ConverseIA+Direito';
 
 export const LINK_VIDEO =
 	'https://res.cloudinary.com/djlmnni49/video/upload/v1732852437/oiveoadic5wsn4zivjw6.mp4';
-/* Att 1 */
+
+export const LINK_AFFILIATES = "#"
+
+export const LINK_LOGIN = "#"
+
+export const LINK_NAVIGATE = [
+	{
+		href: '#inicio',
+		label: 'Início',
+	},
+	{
+		href: '#sobre',
+		label: 'Sobre',
+	},
+	{
+		href: '#recursos',
+		label: 'Recursos',
+	},
+	{
+		href: '#planos',
+		label: 'Planos',
+	},
+	{
+		href: LINK_AFFILIATES,
+		label: 'Afiliados',
+	},
+];

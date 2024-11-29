@@ -13,7 +13,7 @@ import { FormContact } from './components/form-contact';
 export const App = () => {
 	return (
 		<main className="flex w-full flex-col base:pt-4 md:pt-8">
-			<Button className="fixed bottom-2 right-2" asChild>
+			<Button className="fixed bottom-2 right-2 z-20" asChild>
 				<a href={LINK_CPA_WHATSAPP} target="_blank" rel="noreferrer">
 					<span className="base:hidden md:flex"> Fale conosco </span>
 					<img

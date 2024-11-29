@@ -1,4 +1,4 @@
-import { LINK_CPA_WHATSAPP } from '@/lib/constants';
+import { LINK_CTA_WHATSAPP } from '@/lib/constants';
 import { Button } from './ui/button';
 
 export const Hero = () => {
@@ -18,7 +18,7 @@ export const Hero = () => {
 					className="base:max-w-[65%] w-full md:max-w-56 base:h-16 h-12 mt-4 !px-2"
 					asChild
 				>
-					<a href={LINK_CPA_WHATSAPP} target="_blank" rel="noreferrer">
+					<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
 						Teste 20 dias grátis
 					</a>
 				</Button>

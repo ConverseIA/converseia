@@ -1,4 +1,4 @@
-import { LINK_NAVIGATE } from '@/lib/constants';
+import { LINK_LOGIN, LINK_NAVIGATE } from '@/lib/constants';
 import { DrawerMobile } from './drawer-mobile';
 
 export const Header = () => {
@@ -30,8 +30,9 @@ export const Header = () => {
 						))}
 					</ul>
 					<a
-						href="/"
+						href={LINK_LOGIN}
 						className="px-3 py-1 size-full border-2 border-white rounded-xl hover:bg-primary hover:border-transparent transition-all"
+						target="_blank"
 					>
 						Login
 					</a>
