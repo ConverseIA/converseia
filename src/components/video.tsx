@@ -1,4 +1,4 @@
-import { LINK_CPA_WHATSAPP, LINK_VIDEO } from '@/lib/constants';
+import { LINK_CTA_WHATSAPP, LINK_VIDEO } from '@/lib/constants';
 import { Button } from './ui/button';
 
 export const Video = () => {
@@ -16,7 +16,7 @@ export const Video = () => {
 			</div>
 
 			<Button className="max-w-64 h-12 w-full mx-auto" asChild>
-				<a href={LINK_CPA_WHATSAPP} target="_blank" rel="noreferrer">
+				<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
 					Converse com a IA
 				</a>
 			</Button>
