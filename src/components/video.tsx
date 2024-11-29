@@ -8,6 +8,7 @@ export const Video = () => {
 			</h2>
 
 			<div className="max-w-5xl flex items-center justify-center mx-auto bg-neutral-400 w-full h-[500px] rounded-xl shadow text-black">
+				{/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
 				<video
 					src="https://res.cloudinary.com/djlmnni49/video/upload/v1732852437/oiveoadic5wsn4zivjw6.mp4"
 					controls
