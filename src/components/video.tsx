@@ -8,7 +8,13 @@ export const Video = () => {
 			</h2>
 
 			<div className="max-w-5xl flex items-center justify-center mx-auto bg-neutral-400 w-full h-[500px] rounded-xl shadow text-black">
-				Video
+				<video
+					src="https://res.cloudinary.com/djlmnni49/video/upload/v1732852437/oiveoadic5wsn4zivjw6.mp4"
+					controls
+					className="w-full h-full rounded-xl"
+				>
+					Seu navegador não suporta o elemento de vídeo.
+				</video>
 			</div>
 
 			<Button className="max-w-64 h-12 w-full mx-auto">
