@@ -16,9 +16,9 @@ export const Convertional = () => {
 
 			<div className="bg-gradient-to-r py-4 from-background via-dark-third to-background">
 				<Marquee autoFill gradient gradientColor="#17171B" className="gap-16">
-					<img src="/brands/vibra.svg" alt="vibra" />
+					{/* <img src="/brands/vibra.svg" alt="vibra" />
 					<img src="/brands/eurofarma.svg" alt="eurofarma" />
-					<img src="/brands/mercado-bitcoin.svg" alt="mercado-bitcoin" />
+					<img src="/brands/mercado-bitcoin.svg" alt="mercado-bitcoin" /> */}
 					<img src="/brands/grupo-fv.svg" alt="grupo-fv" />
 					<img src="/brands/mc-adv.svg" alt="mc-adv" />
 				</Marquee>

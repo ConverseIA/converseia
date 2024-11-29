@@ -7,12 +7,12 @@ import { TechnologyIncorporte } from './components/technology-incorporate';
 import { Plans } from './components/plans';
 import { Button } from './components/ui/button';
 import { Header } from './components/header';
-import { LINK_CPA_WHATSAPP } from './lib/constants';
+import { LINK_CPA_WHATSAPP, LINK_NAVIGATE } from './lib/constants';
 import { FormContact } from './components/form-contact';
 
 export const App = () => {
 	return (
-		<main className="flex w-full flex-col base:py-4 md:py-8">
+		<main className="flex w-full flex-col base:pt-4 md:pt-8">
 			<Button className="fixed bottom-2 right-2" asChild>
 				<a href={LINK_CPA_WHATSAPP} target="_blank" rel="noreferrer">
 					<span className="base:hidden md:flex"> Fale conosco </span>
@@ -61,6 +61,24 @@ export const App = () => {
 			>
 				<FormContact />
 			</AnimatedSection>
+
+			<footer className="h-48 bg-dark-third flex items-center justify-center flex-col gap-4">
+				<img src="/elements/logo.png" alt="logo" className="h-12" />
+				<ul className="flex gap-4 font-bold">
+					{LINK_NAVIGATE.map((link) => (
+						<li key={link.href}>
+							<a href={link.href} className="hover:text-primary transition-all">
+								{link.label}
+							</a>
+						</li>
+					))}
+				</ul>
+				<Button variant="outline" asChild>
+					<a href={LINK_CPA_WHATSAPP} target="_blank" rel="noreferrer">
+						Contato
+					</a>
+				</Button>
+			</footer>
 		</main>
 	);
 };
