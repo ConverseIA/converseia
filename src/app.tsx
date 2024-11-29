@@ -62,9 +62,9 @@ export const App = () => {
 				<FormContact />
 			</AnimatedSection>
 
-			<footer className="h-48 bg-dark-third flex items-center justify-center flex-col gap-4">
+			<footer className="bg-dark-third flex items-center justify-center flex-col gap-4 py-4">
 				<img src="/elements/logo.png" alt="logo" className="h-12" />
-				<ul className="flex gap-4 font-bold">
+				<ul className="flex gap-4 font-bold flex-wrap justify-center">
 					{LINK_NAVIGATE.map((link) => (
 						<li key={link.href}>
 							<a href={link.href} className="hover:text-primary transition-all">
