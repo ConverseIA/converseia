@@ -11,7 +11,7 @@ export const Convertional = () => {
 			</div>
 
 			<div className="flex justify-center">
-				<h3 className="text-4xl font-bold"> Alguns Escritórios parceiros</h3>
+				<h3 className="text-4xl font-bold"> Alguns escritórios parceiros</h3>
 			</div>
 
 			<div className="bg-gradient-to-r py-4 from-background via-dark-third to-background">

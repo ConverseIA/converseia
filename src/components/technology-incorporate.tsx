@@ -37,7 +37,7 @@ export const TechnologyIncorporte = () => {
 			<div className="flex flex-col gap-6">
 				<p className="base:text-3xl md:text-4xl text-center font-bold max-w-3xl mx-auto">
 					Se um é <span className="text-secondary">revolucionário</span>,
-					imagina um time completo e disponível para seu cliente{' '}
+					imagina um time completo disponível para seu cliente {' '}
 					<span className="text-secondary">Conversar</span> com a{' '}
 					<span className="text-secondary">IA</span> a qualquer momento
 				</p>

@@ -35,7 +35,7 @@ export const CHARGES_AVALIABLE = [
 		list: [
 			'Compreende a demanda inicial',
 			'Encaminha para o setor ou Agente de IA responsável',
-			'Agenda, Cancela e Remarcar Reuniões',
+			'Agenda, cancela e remarcar reuniões',
 			'Organiza a Agenda da Equipe',
 			'Encaminha para o humano quando necessário',
 		],
@@ -45,20 +45,20 @@ export const CHARGES_AVALIABLE = [
 		list: [
 			'Investiga a viabilidade do caso',
 			'Entende a situação do potencial cliente',
-			'Faz a todo o processo de qualificação',
-			'Convida e encaminha para o agendamento',
-			'Encaminha para o humano quando necessário',
-			'Preenche o CRM',
+			'Faz o processo de qualificação',
+			'Convida e encaminha o cliente para o agendamento',
+			'Encaminha para humano apenas quando necessário',
+			'Preenche o CRM de forma automática',
 		],
 	},
 	{
 		title: 'Suporte - Consulta de Processos',
 		list: [
 			'Faz a consulta de dados no PJE',
-			'Retorna Informações sobre o processo sem jurisdiquês',
+			'Retorna informações sobre o processo sem jurisdiquês',
 			'Responde todas as dúvidas do cliente',
 			'Acompanha a movimentação processual em tempo real',
-			'Encaminha para o humano quando necessário',
+			'Encaminha para humano apenas quando necessário',
 		],
 	},
 	{
@@ -68,8 +68,8 @@ export const CHARGES_AVALIABLE = [
 			'Analisa a situação e a viabilidade do caso',
 			'Faz a qualificação necessária para a conversão da pessoa em cliente',
 			'Convida e encaminha para o agendamento',
-			'Encaminha para o humano quando necessário',
-			'Preenche o CRM',
+			'Encaminha para humano apenas quando necessário',
+			'Recolhe o contato e faz contato ativo no whatsapp'
 		],
 	},
 ];
@@ -85,7 +85,7 @@ export const PLANS_AVALIABLE = [
 			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
 			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
 			'Até 10 mil contatos',
-			'* Bônus de R$ 300 para até 2.000 conversas com seu Agente de IA',
+			'* Bônus de R$300 para até 2 mil conversas com seu Agente de IA',
 		],
 	},
 	{
@@ -99,7 +99,7 @@ export const PLANS_AVALIABLE = [
 			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
 			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
 			'Até 25 mil contatos',
-			'* Bônus de R$ 300 para até 3.000 conversas com seu Agente de IA',		
+			'* Bônus de R$300 para até 3 mil conversas com seu Agente de IA',		
 		],
 	},
 	{
@@ -107,7 +107,7 @@ export const PLANS_AVALIABLE = [
 		price: '2.499',
 		list: [
 			'20 Usuários',
-			'3 Agentes de Artificial',
+			'3 Agentes de IA',
 			'5 Módulos - (Agendamento automático + FUP Avançado + NPS)',
 			'Agendamento automático',
 			'Consulta de processos',
@@ -115,8 +115,8 @@ export const PLANS_AVALIABLE = [
 			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
 			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
 			'Até 50 mil contatos',
-			'* Bônus de R$ 300 para até 4.000 conversas com seu Agente de IA',
-			'* Bônus de R$ 300 para consultar até 800 processos com seu Agente de IA',
+			'* Bônus de R$300 para até 4 mil conversas com seu Agente de IA',
+			'* Bônus de R$300 para consultar até 800 processos com seu Agente de IA',
 		],
 	},
 ];

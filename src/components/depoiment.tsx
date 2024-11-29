@@ -14,7 +14,7 @@ export const Depoiment = () => {
 				/>
 				<CardDepoiment
 					name="Maykom Carvalho"
-					job="Advogada Trabalhista"
+					job="Advogado/sócio de Escritório"
 					depoiment="Incrível! A inteligência incorporada nos Agentes da ConverseIA é surpreendente. Agora consigo focar em gerir meu escritório."
 				/>
 			</div>
@@ -26,29 +26,29 @@ export const Depoiment = () => {
 
 				<div className="flex flex-1 w-full flex-col gap-4 base:px-2 md:px-0">
 					<h1 className="base:text-4xl md:text-6xl font-bold base:text-center md:text-left">
-						O que é um <br /> Funcionário 24h?
+						O que é um <br /> funcionário 24h?
 					</h1>
 
 					<div className="space-y-6 font-semibold  base:text-sm md:text-base">
 						<p className="base:text-center md:text-left">
-							Este é um Agente de Inteligência Artificial personalizado, 
+							É um Agente de Inteligência Artificial personalizado, 
 							Como um "ChatGPT" adaptado exclusivamente para atender seus futuros
 							e atuais clientes. Ele contém conteúdos específicos sobre
-							seu escritório e sua atuação jurídica, garantindo disponibilidade,
-							24h por dia e resposta é imediata.
+							seu escritório e sua atuação jurídica, garantindo disponibilidade
+							24h por dia e resposta imediata.
 						</p>
 
 						<div className="flex items-center gap-2">
 							<img src="/icons/user.svg" alt="icon-hammer" className="size-8" />{' '}
 							<span className="leading-5 font-bold">
 								Se comporta como um <br />
-								humano especialista
+								especialista humano
 							</span>
 						</div>
 
 						<p>
 							Seu cliente terá uma experiência de atendimento humanizado,
-							natural e que estará sempre e imediatamente disponível.
+							natural e fluida.
 						</p>
 
 						<div className="flex items-center gap-2">
@@ -64,8 +64,9 @@ export const Depoiment = () => {
 
 						<p>
 							Atendimento 100% automatizado e também 100% fluido.
-							Proporcionalizando para seu escritório o tempo hábil para focar
-							nas atividades advocatícias e não no atendimento apenas.
+							Proporcionando para seu escritório o tempo hábil para focar
+							nas atividades jurídicas e genericas, sem preocupações com 
+							o atendimento.
 						</p>
 					</div>
 				</div>
