@@ -74,7 +74,7 @@ export const App = () => {
 					))}
 				</ul>
 				<Button variant="outline" asChild>
-					<a href={LINK_CPA_WHATSAPP} target="_blank" rel="noreferrer">
+					<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
 						Contato
 					</a>
 				</Button>
