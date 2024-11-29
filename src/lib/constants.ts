@@ -69,7 +69,7 @@ export const CHARGES_AVALIABLE = [
 			'Faz a qualificação necessária para a conversão da pessoa em cliente',
 			'Convida e encaminha para o agendamento',
 			'Encaminha para humano apenas quando necessário',
-			'Recolhe o contato e faz contato ativo no whatsapp'
+			'Recolhe o contato e faz contato ativo no whatsapp',
 		],
 	},
 ];
@@ -99,7 +99,7 @@ export const PLANS_AVALIABLE = [
 			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
 			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
 			'Até 25 mil contatos',
-			'* Bônus de R$300 para até 3 mil conversas com seu Agente de IA',		
+			'* Bônus de R$300 para até 3 mil conversas com seu Agente de IA',
 		],
 	},
 	{
@@ -121,4 +121,9 @@ export const PLANS_AVALIABLE = [
 	},
 ];
 
+export const LINK_CPA_WHATSAPP =
+	'https://wa.me/5581982128625?text=Gostaria+de+saber+mais+sobre+a+ConverseIA+Direito';
+
+export const LINK_VIDEO =
+	'https://res.cloudinary.com/djlmnni49/video/upload/v1732852437/oiveoadic5wsn4zivjw6.mp4';
 /* Att 1 */
