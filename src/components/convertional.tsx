@@ -1,4 +1,3 @@
-import Marquee from 'react-fast-marquee';
 import { Card } from './card';
 
 export const Convertional = () => {
@@ -14,14 +13,15 @@ export const Convertional = () => {
 				<h3 className="text-4xl font-bold"> Alguns escritórios parceiros</h3>
 			</div>
 
-			<div className="bg-gradient-to-r py-4 from-background via-dark-third to-background">
-				<Marquee autoFill gradient gradientColor="#17171B" className="gap-16">
-					{/* <img src="/brands/vibra.svg" alt="vibra" />
+			<div className="bg-gradient-to-r py-4 flex justify-center gap-8 from-background via-dark-third to-background">
+				{/* <Marquee gradient gradientColor="#17171B" className="gap-16" speed={0}>
+					 <img src="/brands/vibra.svg" alt="vibra" />
 					<img src="/brands/eurofarma.svg" alt="eurofarma" />
-					<img src="/brands/mercado-bitcoin.svg" alt="mercado-bitcoin" /> */}
-					<img src="/brands/grupo-fv.svg" alt="grupo-fv" />
-					<img src="/brands/mc-adv.svg" alt="mc-adv" />
-				</Marquee>
+					<img src="/brands/mercado-bitcoin.svg" alt="mercado-bitcoin" />
+				*/}
+				<img src="/brands/grupo-fv.svg" alt="grupo-fv" />
+				<img src="/brands/mc-adv.svg" alt="mc-adv" />
+				{/* </Marquee> */}
 			</div>
 		</div>
 	);
