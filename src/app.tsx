@@ -56,7 +56,7 @@ export const App = () => {
 			</AnimatedSection>
 
 			<AnimatedSection
-				className="w-full h-screen py-24 max-w-6xl mx-auto scroll-mt-24"
+				className="w-full py-24 max-w-6xl mx-auto scroll-mt-24"
 				id="contato"
 			>
 				<FormContact />

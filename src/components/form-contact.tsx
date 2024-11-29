@@ -34,7 +34,6 @@ export const FormContact = () => {
 	});
 
 	const handleSendContact = async (data: FormDataContactUs) => {
-		console.log(data);
 		try {
 			const serviceId = import.meta.env.VITE_MAIL_SERVICE!;
 			const templateId = import.meta.env.VITE_MAIL_TEMPLATE!;
