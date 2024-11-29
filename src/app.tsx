@@ -7,14 +7,14 @@ import { TechnologyIncorporte } from './components/technology-incorporate';
 import { Plans } from './components/plans';
 import { Button } from './components/ui/button';
 import { Header } from './components/header';
-import { LINK_CPA_WHATSAPP, LINK_NAVIGATE } from './lib/constants';
+import { LINK_CTA_WHATSAPP, LINK_NAVIGATE } from './lib/constants';
 import { FormContact } from './components/form-contact';
 
 export const App = () => {
 	return (
 		<main className="flex w-full flex-col base:pt-4 md:pt-8">
 			<Button className="fixed bottom-2 right-2 z-20" asChild>
-				<a href={LINK_CPA_WHATSAPP} target="_blank" rel="noreferrer">
+				<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
 					<span className="base:hidden md:flex"> Fale conosco </span>
 					<img
 						src="/icons/whatsapp.png"
