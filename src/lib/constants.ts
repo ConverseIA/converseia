@@ -71,7 +71,7 @@ export const PLANS_AVALIABLE = [
 		list: [
 			'10 Usuários',
 			'2 Agentes de IA (Secretária + SDR)',
-			'3 Módulos Extras:,
+			'3 Módulos Extras:',
 			'* Agendamento automático',
 			'* Follow-UP(FUP) Padrão',
 			'* Pesquisa de Satisfação(NPS)',
