@@ -3,7 +3,7 @@ import { DrawerMobile } from './drawer-mobile';
 
 export const Header = () => {
 	return (
-		<header className="flex w-full max-h-64 h-full backdrop-blur-sm py-4 sticky top-0 z-10 px-2">
+		<header className="flex w-full max-h-64 h-full backdrop-blur-sm py-4 sticky top-0 z-30 px-2">
 			<div className="flex w-full justify-between items-center max-w-7xl mx-auto gap-3">
 				<div className="base:flex md:hidden">
 					<DrawerMobile />
@@ -33,6 +33,7 @@ export const Header = () => {
 						href={LINK_LOGIN}
 						className="px-3 py-1 size-full border-2 border-white rounded-xl hover:bg-primary hover:border-transparent transition-all"
 						target="_blank"
+						rel="noreferrer"
 					>
 						Login
 					</a>
