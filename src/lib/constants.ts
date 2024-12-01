@@ -110,9 +110,9 @@ export const LINK_CTA_WHATSAPP =
 export const LINK_VIDEO =
 	'https://res.cloudinary.com/djlmnni49/video/upload/v1732894445/dsqyig8giefutkd41ior.mp4';
 
-export const LINK_AFFILIATES = "#"
+export const LINK_AFFILIATES = '#';
 
-export const LINK_LOGIN = "#"
+export const LINK_LOGIN = '#';
 
 export const LINK_NAVIGATE = [
 	{
@@ -136,3 +136,7 @@ export const LINK_NAVIGATE = [
 		label: 'Afiliados',
 	},
 ];
+
+export const LINK_FOR_LINKEDIN = '';
+
+export const LINK_FOR_INSTAGRAM = '';

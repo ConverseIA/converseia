@@ -7,7 +7,12 @@ import { TechnologyIncorporte } from './components/technology-incorporate';
 import { Plans } from './components/plans';
 import { Button } from './components/ui/button';
 import { Header } from './components/header';
-import { LINK_CTA_WHATSAPP, LINK_NAVIGATE } from './lib/constants';
+import {
+	LINK_CTA_WHATSAPP,
+	LINK_FOR_INSTAGRAM,
+	LINK_FOR_LINKEDIN,
+	LINK_NAVIGATE,
+} from './lib/constants';
 import { FormContact } from './components/form-contact';
 
 export const App = () => {
@@ -73,11 +78,27 @@ export const App = () => {
 						</li>
 					))}
 				</ul>
-				<Button variant="outline" asChild>
-					<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
-						Contato
+				<div className="flex items-center gap-3">
+					<Button variant="outline" asChild>
+						<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
+							Contato
+						</a>
+					</Button>
+					<a href={LINK_FOR_LINKEDIN} target="_blank" rel="noreferrer">
+						<img
+							src="/elements/linkedin.svg"
+							alt="linkedin"
+							className="size-8"
+						/>
 					</a>
-				</Button>
+					<a href={LINK_FOR_INSTAGRAM} target="_blank" rel="noreferrer">
+						<img
+							src="/elements/instagram.svg"
+							alt="instagram"
+							className="size-8"
+						/>
+					</a>
+				</div>
 			</footer>
 		</main>
 	);
