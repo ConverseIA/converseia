@@ -137,6 +137,6 @@ export const LINK_NAVIGATE = [
 	},
 ];
 
-export const LINK_FOR_LINKEDIN = '';
+export const LINK_FOR_LINKEDIN = 'https://www.linkedin.com/company/converseia-direito';
 
-export const LINK_FOR_INSTAGRAM = '';
+export const LINK_FOR_INSTAGRAM = 'https://www.instagram.com/converse.ia/';
