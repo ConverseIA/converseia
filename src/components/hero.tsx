@@ -11,9 +11,9 @@ export const Hero = () => {
 				</h1>
 
 				<h3 className="max-w-sm">
-				'Agentes de Inteligência Artificial para receber toda a demanda de
-				atendimento do seu escritório'
-				</h3>
+  {'Agentes de Inteligência Artificial para receber toda a demanda de ' +
+  'atendimento do seu escritório'}
+</h3>
 				<Button
 					className="base:max-w-[65%] w-full md:max-w-56 base:h-16 h-12 mt-4 !px-2"
 					asChild
