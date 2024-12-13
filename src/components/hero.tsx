@@ -7,7 +7,7 @@ export const Hero = () => {
 			<div className="flex flex-col gap-4 justify-center base:items-center md:items-start base:text-center md:text-left">
 				<h1 className="max-w-xl text-4xl font-bold ">
 					Automotize o atendimento com funcionários de IA que trabalham{' '}
-					<span className="text-primary">24h por dia.</span>
+					<span className="text-primary">24h por dia</span>
 				</h1>
 
 				<h3 className="max-w-sm">
