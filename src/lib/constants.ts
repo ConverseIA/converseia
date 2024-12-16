@@ -87,7 +87,7 @@ export const PLANS_AVALIABLE = [
 		price: '2.499',
 		list: [
 			'20 Usuários',
-			'3 Agentes de IA (Secretária, SDR & Suporte)',
+			'4 Agentes de IA (Secretária, Social Selling, SDR & Suporte)',
 			'5 Módulos extras:',
 			'* Agendamento automático',
 			'* Follow-UP(FUP) Padrão',
