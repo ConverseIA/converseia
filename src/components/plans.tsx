@@ -41,7 +41,7 @@ export const Plans = () => {
 
 				<Button className="max-w-64 h-12 w-full mx-auto" asChild>
 					<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
-						Teste grátis 20 dias
+						Teste grátis 7 dias
 					</a>
 				</Button>
 			</div>
