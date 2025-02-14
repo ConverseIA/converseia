@@ -19,7 +19,7 @@ export const Hero = () => {
 					asChild
 				>
 					<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
-						Teste 20 dias grátis
+						Teste 7 dias grátis
 					</a>
 				</Button>
 			</div>
