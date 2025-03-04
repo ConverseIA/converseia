@@ -19,7 +19,6 @@ export const Convertional = () => {
 					<img src="/brands/eurofarma.svg" alt="eurofarma" />
 					<img src="/brands/mercado-bitcoin.svg" alt="mercado-bitcoin" />
 				*/}
-				<img src="/brands/grupo-fv.svg" alt="grupo-fv" />
 				<img src="/brands/mc-adv.svg" alt="mc-adv" />
 				{/* </Marquee> */}
 			</div>
