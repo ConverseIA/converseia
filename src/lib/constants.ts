@@ -132,7 +132,7 @@ export const LINK_NAVIGATE = [
 		label: 'Planos',
 	},
 	{
-		href: https://converseia.gitbook.io/converseia-docs,
+		href: 'https://converseia.gitbook.io/converseia-docs',
 		label: 'Documentação',
 	},
 ];
