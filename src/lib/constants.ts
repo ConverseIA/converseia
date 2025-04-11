@@ -1,3 +1,5 @@
+import { Subtitles } from "lucide-react";
+
 export function getInitials(name: string): string {
 	// Split the name into words
 	const words = name.split(' ');
@@ -50,7 +52,6 @@ export const CHARGES_AVALIABLE = [
 		],
 	},
 ];
-
 export const PLANS_AVALIABLE = [
 	{
 		title: 'Escritório Essencial',
@@ -65,6 +66,7 @@ export const PLANS_AVALIABLE = [
 			'* Bônus de R$300 para até 2 mil conversas com seu Agente de IA',
 		],
 	},
+
 	{
 		title: 'Escritório Avançado',
 		price: '1.499',

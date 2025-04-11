@@ -1,4 +1,7 @@
-import { LINK_VIDEO } from '@/lib/constants';
+ 
+  
+ 
+   import { LINK_VIDEO } from '@/lib/constants';
 
 export const Video = () => {
 	return (

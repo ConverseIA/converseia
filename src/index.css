@@ -45,3 +45,6 @@
 .rfm-marquee {
   gap: 8px;
 }
+.custom-font {
+  font-family: 'YourDesiredFont', sans-serif;
+}

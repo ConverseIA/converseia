@@ -3,22 +3,52 @@ import { CardDepoiment } from './card-depoiment';
 export const Depoiment = () => {
 	return (
 		<div className="flex flex-col gap-16 items-center">
-			<h2 className="text-4xl font-bold">Depoimentos</h2>
+			<h2 className="text-4xl font-bold">Recursos</h2>
 
-			<div className="grid base:grid-cols-1 md:grid-cols-2 base:gap-2 md:gap-4 base:px-2 md:px-0">
-				<CardDepoiment
-					name="Eugenia Belo"
-					job="Assistente Jurídica"
-					depoiment="A funcionalidade das IAs é assustadora, permitindo uma agilidade impressionante no atendimento aos clientes e otimizando a capacidade do escritório. 
-					A plataforma se destaca ao oferecer bons mecanismos, e a integração do CRM é um diferencial significativo, possibilitando o gerenciamento completo do cliente em um único lugar. Gostaria de ter descoberto antes!."
-				/>
-				<CardDepoiment
-					name="Maykom Carvalho"
-					job="Advogado/sócio de Escritório"
-					depoiment="Incrível! A inteligência incorporada nos Agentes da ConverseIA é surpreendente. Agora consigo focar em gerir meu escritório."
-				/>
-			</div>
-
+			<div className="grid base:grid-cols-1 md:grid-cols-2 gap-6 p-4 md:p-8 bg-dark-primary rounded-lg shadow-lg">
+  <CardDepoiment
+    name="Recurso 1"
+    job="SDR - Pré Vendedor(a)"
+    depoiment="
+      Investiga a viabilidade do caso.
+      Entende a situação do potencial cliente.
+      Faz o processo de qualificação.
+      Convida e encaminha o cliente para o agendamento.
+      Encaminha para humano apenas quando necessário.
+      Preenche o CRM de forma automática."
+  />
+  <CardDepoiment
+    name="Recurso 2"
+    job="Secretária"
+    depoiment="
+      Compreende a demanda inicial.
+      Encaminha para o setor ou Agente de IA responsável.
+      Agenda, cancela e remarca reuniões.
+      Organiza a Agenda da Equipe.
+      Encaminha para o humano quando necessário."
+  />
+  <CardDepoiment
+    name="Recurso 3"
+    job="Consulta de processos"
+    depoiment="
+      Faz a consulta de dados no PJE.
+      Retorna informações sobre o processo sem jurisdiquês.
+      Responde todas as dúvidas do cliente.
+      Acompanha a movimentação processual em tempo real.
+      Encaminha para humano apenas quando necessário."
+  />
+  <CardDepoiment
+    name="Recurso 4"
+    job="Social Selling"
+    depoiment="
+      Identifica a demanda.
+      Analisa a situação e a viabilidade do caso.
+      Faz a qualificação necessária para conversão em cliente.
+      Convida e encaminha para o agendamento.
+      Encaminha para humano apenas quando necessário.
+      Recolhe contato e faz contato ativo no WhatsApp."
+  />
+</div>
 			<div className="flex base:flex-col md:flex-row items-center gap-8">
 				<div className="flex-1 flex size-full">
 					<img src="/elements/mobile-wrapper.png" alt="mobile-wrapper" />

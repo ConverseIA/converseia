@@ -2,37 +2,37 @@ import { CHARGES_AVALIABLE } from '@/lib/constants';
 import Marquee from 'react-fast-marquee';
 
 export const TechnologyIncorporte = () => {
-	return (
-		<div className="flex flex-col gap-8 items-center max-w-7xl mx-auto">
-			<h2 className="text-4xl font-bold text-center text-light-primary">
-				Tecnologias incorporadas
-			</h2>
-			<div className="bg-gradient-to-r py-4 px-6 from-dark-primary via-dark-third to-dark-primary rounded-lg">
-				<Marquee
-					autoFill
-					gradient
-					gradientColor="#1B1B21"
-					className="gap-16 items-center"
-				>
-					{[
-						{ src: '/icons/openai.svg', alt: 'OpenAI' },
-						{ src: '/icons/brand-unknow.svg', alt: 'Marca desconhecida' },
-						{ src: '/icons/grok.png', alt: 'grok' },
-						{ src: '/icons/google.svg', alt: 'Google' },
-						{ src: '/icons/meta.svg', alt: 'Meta' },
-						{ src: '/icons/analytics.svg', alt: 'Google Analytics' },
-						{ src: '/icons/gemini.svg', alt: 'Gemini' },
-						{ src: '/icons/claude-ai.png', alt: 'claude-ai' },
-					].map((icon, index) => (
-						<img
-							key={index}
-							className="size-16 object-contain"
-							src={icon.src}
-							alt={icon.alt}
-						/>
-					))}
-				</Marquee>
-			</div>
+  return (
+    <div className="flex flex-col gap-8 items-center max-w-7xl mx-auto">
+      <h2 className="text-4xl font-bold text-center text-light-primary">
+        Tecnologias incorporadas
+      </h2>
+      <div className="bg-gradient-to-r py-4 px-6 from-dark-primary via-dark-third to-dark-primary rounded-lg">
+        <Marquee
+          autoFill
+          gradient
+          gradientColor="#1B1B21"
+          className="items-center"
+        >
+          {[
+            { src: '/icons/openai.svg', alt: 'OpenAI' },
+            { src: '/icons/brand-unknow.svg', alt: 'Marca desconhecida' },
+            { src: '/icons/grok.png', alt: 'grok' },
+            { src: '/icons/google.svg', alt: 'Google' },
+            { src: '/icons/meta.svg', alt: 'Meta' },
+            { src: '/icons/analytics.svg', alt: 'Google Analytics' },
+            { src: '/icons/gemini.svg', alt: 'Gemini' },
+            { src: '/icons/claude-ai.png', alt: 'claude-ai' },
+          ].map((icon, index) => (
+            <img
+              key={index}
+              className="size-16 object-contain mx-4" // Adicionei margem horizontal aqui
+              src={icon.src}
+              alt={icon.alt}
+            />
+          ))}
+        </Marquee>
+      </div>
 
 			<div className="flex flex-col gap-6">
 				<p className="base:text-3xl md:text-4xl text-center font-bold max-w-3xl mx-auto">
