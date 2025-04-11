@@ -45,3 +45,20 @@
 .rfm-marquee {
   gap: 8px;
 }
+.custom-font {
+  font-family: 'YourDesiredFont', sans-serif;
+}
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.dynamic-border {
+  background-image: linear-gradient(to right, #0055fb, #00d4ff);
+  animation: borderAnimation 3s infinite alternate;
+  border-radius: 15px; /* Ajuste conforme necessário */
+}
