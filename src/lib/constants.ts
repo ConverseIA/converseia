@@ -67,8 +67,6 @@ export const PLANS_AVALIABLE = [
 			'Tudo do plano Escritório Essencial, mais:',
 			'Agentes Secretaria, SDR e Agendamento automático',
 			'4 tentativas de Follow-UP (FUP) fluido e personalizado',
-			'Módulos de IA: Pesquisa de satisfação, Lembretes de reunião e audiência',
-			'Pesquisa de Satisfação(NPS)',
 			'Bônus de R$300 para até 1 mil conversas com seu Agente de IA',
 		],
 		buttonText: 'Teste grátis 7 dias', // Adicione apenas o texto
