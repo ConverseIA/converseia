@@ -8,7 +8,7 @@ Neste boilerplate, utilizamos ferramentas leves e eficientes para desenvolviment
 
 ### Utilizando BiomeJS como Linter
 
-Além disso , estou testando o uso do **BiomeJS** como linter de código. Para configurá-lo corretamente no VSCode, siga os passos abaixo:
+Além disso, estou testando o uso do **BiomeJS** como linter de código. Para configurá-lo corretamente no VSCode, siga os passos abaixo:
 
 1. Instale a extensão "Biome" no VSCode, procurando por "Biome" nas extensões.
 
