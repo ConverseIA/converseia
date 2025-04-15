@@ -1,5 +1,3 @@
-import { Subtitles } from "lucide-react";
-
 export function getInitials(name: string): string {
 	// Split the name into words
 	const words = name.split(' ');
@@ -7,6 +5,8 @@ export function getInitials(name: string): string {
 	const initials = words.map((word) => word[0].toUpperCase()).join('');
 	return initials;
 }
+
+export const TITLE = "Cargos Disponíveis";
 
 export const CHARGES_AVALIABLE = [
 	{
@@ -16,7 +16,7 @@ export const CHARGES_AVALIABLE = [
 			'Encaminha para o setor ou Agente de IA responsável',
 			'Agenda, cancela e remarcar reuniões',
 			'Organiza a Agenda da Equipe',
-			'Encaminha para o humano quando necessário',
+			
 		],
 	},
 	{
@@ -26,8 +26,6 @@ export const CHARGES_AVALIABLE = [
 			'Entende a situação do potencial cliente',
 			'Faz o processo de qualificação',
 			'Convida e encaminha o cliente para o agendamento',
-			'Encaminha para humano apenas quando necessário',
-			'Preenche o CRM de forma automática',
 		],
 	},
 	{
@@ -37,17 +35,15 @@ export const CHARGES_AVALIABLE = [
 			'Retorna informações sobre o processo sem jurisdiquês',
 			'Responde todas as dúvidas do cliente',
 			'Acompanha a movimentação processual em tempo real',
-			'Encaminha para humano apenas quando necessário',
+			
 		],
 	},
 	{
 		title: 'Social Selling',
 		list: [
 			'Identifica a demanda',
-			'Analisa a situação e a viabilidade do caso',
-			'Faz a qualificação necessária para a conversão da pessoa em cliente',
-			'Convida e encaminha para o agendamento',
-			'Encaminha para humano apenas quando necessário',
+			'Compreende a demanda inicial',
+			'Encaminha para o setor ou Agente de IA responsável',
 			'Recolhe o contato e faz contato ativo no whatsapp',
 		],
 	},
@@ -55,53 +51,34 @@ export const CHARGES_AVALIABLE = [
 export const PLANS_AVALIABLE = [
 	{
 		title: 'Escritório Essencial',
-		price: '799',
+		price: '599',
 		list: [
-			'5 Usuários',
-			'2 Agentes de IA (Secretária + SDR)',
-			'CRM Personalizado para o setor Jurídico',
-			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
-			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
-			'Até 10 mil contatos',
-			'* Bônus de R$300 para até 2 mil conversas com seu Agente de IA',
+			'Até 5 Usuários e 5 mil contatos',
+			'1 Canal cada: WhatsApp QR Code, WhatsApp Oficial, Instagram/Direct e mais',
+			'Todos os recursos avançados da plataforma + CRM Jurídico',
+			'Módulos de IA: Pesquisa de satisfação, Lembretes de reunião e audiência',
 		],
 	},
 
 	{
 		title: 'Escritório Avançado',
-		price: '1.499',
+		price: '899',
 		list: [
-			'10 Usuários',
-			'2 Agentes de IA (Secretária + SDR)',
-			'3 Módulos Extras:',
-			'* Agendamento automático',
-			'* Follow-UP(FUP) Padrão',
-			'* Pesquisa de Satisfação(NPS)',
-			'CRM Personalizado para o setor Jurídico',
-			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
-			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
-			'Até 25 mil contatos',
-			'* Bônus de R$300 para até 3 mil conversas com seu Agente de IA',
+			'10 Usuários e 10 mil contatos',
+			'1 Canal cada: WhatsApp QR Code, WhatsApp Oficial, Instagram/Direct e mais',
+			'Agentes Secretaria, SDR e Agendamento automático',
+			'4 tentativas de Follow-UP (FUP) fluido e personalizado',
+			'Módulos de IA: Pesquisa de satisfação, Lembretes de reunião e audiência',
+			'Pesquisa de Satisfação(NPS)',
+			'Bônus de R$300 para até 1 mil conversas com seu Agente de IA',
 		],
+		buttonText: 'Teste grátis 7 dias', // Adicione apenas o texto
 	},
 	{
-		title: 'Escritório de Excelência',
-		price: '2.499',
+		title: 'Escritório Personalizado',
+		price: ' A definir',
 		list: [
-			'20 Usuários',
-			'4 Agentes de IA (Secretária, Social Selling, SDR & Suporte)',
-			'5 Módulos extras:',
-			'* Agendamento automático',
-			'* Follow-UP(FUP) Padrão',
-			'* Follow-UP(FUP) Personalizado',
-			'* Módulo de envio de procuração',
-			'* Pesquisa de Satisfação(NPS)',
-			'CRM Personalizado para o setor Jurídico',
-			'Relatórios(BI) para acompanhar performance dos Agentes de IA',
-			'Conecta com Multicanais: Whatsapp QR Code, Whatsapp Oficial, Instagram/Direct e +',
-			'Até 50 mil contatos',
-			'* Bônus de R$300 para até 4 mil conversas com seu Agente de IA',
-			'* Bônus de R$300 para consultar até 800 processos com seu Agente de IA',
+			'Personalize o seu plano de acordo com a sua necessidade.',
 		],
 	},
 ];
@@ -134,7 +111,7 @@ export const LINK_NAVIGATE = [
 		label: 'Planos',
 	},
 	{
-		href: 'https://converseia.gitbook.io/converseia-docs',
+		href: 'https://converseia.gitbook.io/converseia-docs', 
 		label: 'Documentação',
 	},
 ];
