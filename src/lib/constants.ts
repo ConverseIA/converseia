@@ -53,7 +53,7 @@ export const PLANS_AVALIABLE = [
 		title: 'Escritório Essencial',
 		price: '599',
 		list: [
-			'Até 5 Usuários e 5 mil contatos',
+			'Até 5 acessos e 5 mil contatos na plataforma',
 			'1 Canal cada: WhatsApp QR Code, WhatsApp Oficial, Instagram/Direct e mais',
 			'Todos os recursos avançados da plataforma + CRM Jurídico',
 			'Módulos de IA: Pesquisa de satisfação, Lembretes de reunião e audiência',
@@ -67,7 +67,7 @@ export const PLANS_AVALIABLE = [
 			'Tudo do plano Escritório Essencial, mais:',
 			'Agentes Secretaria, SDR e Agendamento automático',
 			'4 tentativas de Follow-UP (FUP) fluido e personalizado',
-			'Bônus de R$300 para até 1 mil conversas com seu Agente de IA',
+			'Bônus de R$300 de API para até 1 mil conversas com seu Agente de IA',
 		],
 		buttonText: 'Teste grátis 7 dias', // Adicione apenas o texto
 	},
