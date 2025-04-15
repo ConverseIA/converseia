@@ -64,7 +64,7 @@ export const PLANS_AVALIABLE = [
 		title: 'Escritório Avançado',
 		price: '899',
 		list: [
-			'10 Usuários e 10 mil contatos',
+			'10 Usuários e 10 mil contatos ',
 			'1 Canal cada: WhatsApp QR Code, WhatsApp Oficial, Instagram/Direct e mais',
 			'Agentes Secretaria, SDR e Agendamento automático',
 			'4 tentativas de Follow-UP (FUP) fluido e personalizado',
