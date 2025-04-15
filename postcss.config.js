@@ -1,3 +1,4 @@
+
 export default {
   plugins: {
     tailwindcss: {},
@@ -9,3 +10,6 @@ export default {
  
   
  
+
+
+
