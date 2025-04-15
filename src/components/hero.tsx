@@ -10,7 +10,7 @@ export const Hero = () => {
 					<span className="text-primary">Agentes de IA</span>
 			     	</h1>
 				<h3 className="max-w-sm text-xl">
-					Funcionários de Inteligência Artificial que trabalham por você!
+					Funcionários de Inteligência Artificial que trabalham por você e para você!
 				</h3>
 				<Button
 					className="base:max-w-[65%] w-full md:max-w-60 base:h-16 mt-4 !px-2"

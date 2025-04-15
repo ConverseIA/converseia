@@ -11,9 +11,8 @@ export const Depoiment = () => {
           name=""
           job="IA Conversacional Avançada"
           depoiment="
-            Na plataforma temos transcição de todos os áudios. Além disso, os 
-            agentes conversarão de forma fluida, podendo também ouvir, falar, ler documentos, imagens, concatenar mensagens
-            ,enviar mensagens picadas e preencheer as principais informações da conversa automáticamente.
+            Na plataforma temos transcrição de todos os áudios, agentes com diálogo fluido: ouvindo, enviando audio, lendo documentos, imagens, concatenando mensagens
+         e enviando mensagens partidas, além de preencheer as principais informações da conversa de forma automática.
           "
         />
         <CardDepoiment
@@ -21,7 +20,7 @@ export const Depoiment = () => {
           name=" "
           job="Multi Canais"
           depoiment="
-            Tenha todas as contas e várias contas como a do instagram, facebook, whatsapp, telegram, twillo, todas conectadas em um único lugar."
+            Conecte várias contas da mesma rede social – como múltiplos perfis do Instagram, Facebook, WhatsApp, Telegram, Twilio e outras – em um único lugar."
         />
         <CardDepoiment
           icon="/icons/smartflow.png" // Caminho completo para o ícone
@@ -42,7 +41,7 @@ export const Depoiment = () => {
           name=" "
           job="Principais Integrações"
           depoiment="
-            Integrações com direta com PJE, Asaas, ADVBOX, principais CRM's do mercado como: Pipefy, Pipedrive, RDCRM e afins ."
+            Integrações direta com PJE, Asaas, ADVBOX, principais CRM's do mercado como: Pipefy, Pipedrive, RDCRM e afins ."
         />
 		  <CardDepoiment
           icon="/icons/CRM.png" // Caminho completo para o ícone
@@ -91,13 +90,13 @@ export const Depoiment = () => {
 								className="size-8"
 							/>
 							<span className="leading-5 font-bold">
-								Deixe seu advogado <br /> ser advogado
+								Tenha mais tempo <br /> para gerir o seu negócio
 							</span>
 						</div>
 
 						<p>
 							Libere tempo hábil para focar
-							nas atividades jurídicas e genericas, sem preocupações com 
+							na gestão do seu escritório, sem preocupações com 
 							o atendimento.
 						</p>
 					</div>
