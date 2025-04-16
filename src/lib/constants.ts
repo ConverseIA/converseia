@@ -84,7 +84,7 @@ export const LINK_CTA_WHATSAPP =
 	'https://wa.me/5581991656423?text=Gostaria+de+saber+mais+sobre+a+ConverseIA+Direito';
 
 export const LINK_VIDEO =
-	'https://res.cloudinary.com/djlmnni49/video/upload/v1732894445/dsqyig8giefutkd41ior.mp4';
+	'https://asset.cloudinary.com/djlmnni49/190c8f42dac568c864fa298d732fccef';
 
 export const LINK_AFFILIATES = '#';
 
