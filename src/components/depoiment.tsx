@@ -11,8 +11,9 @@ export const Depoiment = () => {
           name=""
           job="IA Conversacional Avançada"
           depoiment="
-            Na plataforma temos transcrição de todos os áudios, agentes com diálogo fluido: ouvindo, enviando audio, lendo documentos, imagens, concatenando mensagens
-         e enviando mensagens partidas, além de preencheer as principais informações da conversa de forma automática.
+        Nossa plataforma garante um atendimento ágil e inteligente. Os áudios são transcritos automaticamente, e os agentes virtuais se comunicam com fluidez: 
+		ouvem, falam, leem documentos e imagens, organizam e dividem mensagens conforme a necessidade. 
+		Tudo isso enquanto capturam e preenchem automaticamente as principais informações da conversa, otimizando o tempo e melhorando a produtividade
           "
         />
         <CardDepoiment
@@ -34,21 +35,22 @@ export const Depoiment = () => {
           name=""
           job="Agendamento automático"
           depoiment="
-           Organize compromissos e reuniões de forma automática e fluida através da IA, além disso, programe lembretes para evitar a falta de comparecimento dos leads/ clientes nas reuniões."
+           Nossos agentes gerenciam a agenda dos advogados de forma automática e eficiente, 
+		   agendando reuniões, enviando confirmações e programando lembretes para evitar faltas de leads e clientes, seja em reuniões ou até mesmo em audiências"
         />
 		  <CardDepoiment
           icon="/icons/integrações.png" // Caminho completo para o ícone
           name=" "
           job="Principais Integrações"
           depoiment="
-            Integrações direta com PJE, Asaas, ADVBOX, principais CRM's do mercado como: Pipefy, Pipedrive, RDCRM e afins ."
+            Integrações diretas com o PJe, Asaas, ADVBOX e os principais CRMs do mercado, como Pipefy, Pipedrive, RD Station CRM, entre outros."
         />
 		  <CardDepoiment
           icon="/icons/CRM.png" // Caminho completo para o ícone
           name=" "
           job="CRM Integrado"
           depoiment="
-            Gerenciamento de relacionamento com o cliente (CRM) avançado, possibilitando você a gerir as negociações em seu quadro kanban, garatindo a previsibilidade dos seus processos comerciais."
+            Gerenciamento de relacionamento com o cliente (CRM) avançado, com visualização em quadro Kanban, que permite acompanhar cada etapa das negociações e garantir mais previsibilidade nos seus processos comerciais."
         />
       </div>
 			<div className="flex base:flex-col md:flex-row items-center gap-8">
