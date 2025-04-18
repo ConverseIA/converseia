@@ -30,7 +30,7 @@ const Counter = ({ endValue }: { endValue: string }) => {
 
 export const Convertional = () => {
 	return (
-		<div className="flex flex-col base:mt-4 md:mt-0 gap-8 base:px-2 md:px-0 mb-10">
+		<div className="flex flex-col base:mt-4 md:mt-0 gap-8 base:px-2 md:px-0">
 			<div className="grid grid-row-1 base:grid-cols-1 md:grid-cols-3 gap-6">
 				<Card
 					highlight={<Counter endValue="95%" />}

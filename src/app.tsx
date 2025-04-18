@@ -43,11 +43,11 @@ export const App = () => {
 			</AnimatedSection>
 
 			<AnimatedSection
-  id="recursos"
-  className="w-full max-w-7xl mx-auto scroll-mt-24 py-24"
->
-  <Depoiment />
-</AnimatedSection>
+				id="recursos"
+				className="w-full max-w-7xl mx-auto scroll-mt-24"
+			>
+				<Depoiment />
+			</AnimatedSection>
 
 			<AnimatedSection className="size-full bg-dark-primary py-24">
 				<TechnologyIncorporte />

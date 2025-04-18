@@ -4,7 +4,7 @@ import { TITLE } from '../lib/constants';
 
 export const TechnologyIncorporte = () => {
   return (
-    <div className="flex flex-col gap-12 relative z-0">
+    <div className="flex flex-col gap-12">
       <p className="text-4xl md:text-5xl text-center font-bold max-w-3xl mx-auto text-white leading-snug">
         Se um é <span className="text-secondary">revolucionário</span>, imagina um time completo disponível para seu cliente{' '}
         <span className="text-secondary">Conversar</span> com a{' '}
@@ -16,7 +16,7 @@ export const TechnologyIncorporte = () => {
         <span className="text-secondary">ConverseIA</span> poderão ocupar:
       </h4>
 
-      <div className="flex flex-col gap-16 items-center mb-24">
+      <div className="flex flex-col gap-16 items-center">
         <h2 className="text-4xl font-bold text-white">{TITLE}</h2>
 
         <div className="grid base:grid-cols-1 md:grid-cols-2 gap-6 p-4 md:p-8 bg-dark-primary rounded-lg shadow-lg">

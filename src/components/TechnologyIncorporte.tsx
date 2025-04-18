@@ -16,7 +16,7 @@ export const TechnologyIncorporte = () => {
         <span className="text-secondary">ConverseIA</span> poderão ocupar:
       </h4>
 
-      <div className="flex flex-col gap-16 items-center mb-24">
+      <div className="flex flex-col gap-16 items-center">
         <h2 className="text-4xl font-bold text-white">{TITLE}</h2>
 
         <div className="grid base:grid-cols-1 md:grid-cols-2 gap-6 p-4 md:p-8 bg-dark-primary rounded-lg shadow-lg">
