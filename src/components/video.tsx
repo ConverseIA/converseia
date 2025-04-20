@@ -3,8 +3,8 @@ import Marquee from 'react-fast-marquee';
 
 export const Video = () => {
   return (
-	<div className="flex flex-col h-full justify-center gap-6 base:px-2 md:px-0 mt-[-1px]"> {/* Ajuste aqui */}
-      <h2 className="base:text-3xl md:text-4xl font-bold text-white text-center">
+<div className="flex flex-col h-full justify-center gap-6 base:px-2 md:px-0 mt-12 md:mt-24">
+<h2 className="base:text-3xl md:text-4xl font-bold text-white text-center">
         Conheça mais sobre a <br /> ConverseIA Direito:
       </h2>
       <div className="max-w-5xl flex items-center justify-center mx-auto bg-neutral-400 w-full h-[500px] rounded-xl shadow text-black">
