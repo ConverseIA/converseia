@@ -19,33 +19,40 @@ export const Video = () => {
         </video>
       </div>
 
-      {/* Seção de Tecnologias Incorporadas */}
-      <div className="flex flex-col gap-8 items-center max-w-7xl mx-auto mt-8">
-        <h2 className="text-4xl font-bold text-center text-light-primary">
-          Tecnologias incorporadas
-        </h2>
-        <div className="bg-gradient-to-r py-4 px-6 from-dark-primary via-dark-third to-dark-primary rounded-lg">
-          <Marquee autoFill pauseOnHover={true} gradient gradientColor="#1B1B21" className="items-center">
-            {[
-              { src: '/icons/openai.svg', alt: 'OpenAI' },
-              { src: '/icons/brand-unknow.svg', alt: 'Marca desconhecida' },
-              { src: '/icons/grok.png', alt: 'grok' },
-              { src: '/icons/google.svg', alt: 'Google' },
-              { src: '/icons/meta.svg', alt: 'Meta' },
-              { src: '/icons/analytics.svg', alt: 'Google Analytics' },
-              { src: '/icons/gemini.svg', alt: 'Gemini' },
-              { src: '/icons/claude-ai.png', alt: 'claude-ai' },
-            ].map((icon, index) => (
-              <img
-                key={index}
-                className="size-16 object-contain mx-4"
-                src={icon.src}
-                alt={icon.alt}
-              />
-            ))}
-          </Marquee>
-        </div>
-      </div>
+{/* Seção de Tecnologias Incorporadas */}
+<div className="flex flex-col gap-8 items-center w-full px-4 sm:px-6 md:px-8 max-w-7xl mx-auto mt-8">
+  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-light-primary">
+    Tecnologias incorporadas
+  </h2>
+
+  <div className="bg-gradient-to-r py-4 px-6 from-dark-primary via-dark-third to-dark-primary rounded-lg w-full overflow-hidden">
+    <Marquee
+      autoFill
+      pauseOnHover
+      gradient
+      gradientColor="#1B1B21"
+      className="flex items-center"
+    >
+      {[
+        { src: '/icons/openai.svg', alt: 'OpenAI' },
+        { src: '/icons/brand-unknow.svg', alt: 'Marca desconhecida' },
+        { src: '/icons/grok.png', alt: 'grok' },
+        { src: '/icons/google.svg', alt: 'Google' },
+        { src: '/icons/meta.svg', alt: 'Meta' },
+        { src: '/icons/analytics.svg', alt: 'Google Analytics' },
+        { src: '/icons/gemini.svg', alt: 'Gemini' },
+        { src: '/icons/claude-ai.png', alt: 'claude-ai' },
+      ].map((icon, index) => (
+        <img
+          key={index}
+          src={icon.src}
+          alt={icon.alt}
+          className="w-10 sm:w-12 md:w-16 h-auto object-contain mx-4"
+        />
+      ))}
+    </Marquee>
+  </div>
+</div>
     </div>
   );
 };
