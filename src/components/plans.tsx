@@ -41,7 +41,7 @@ export const Plans = () => {
 				  className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-6 rounded-full mt-auto shadow-md transform transition-transform hover:scale-105" 
 				  asChild
 				>
-                  <a href={'https://docs.google.com/forms/d/1vU3SVdNqtRoB-R4IzzQC_YkNxHQZyBtFTtWike1LJoM/edit'} target="_blank" rel="noreferrer">
+                  <a href={'https://forms.gle/83EQjA4E7xEL9kSPA'} target="_blank" rel="noreferrer">
                     Teste grátis 7 dias
                   </a>
                 </Button>
