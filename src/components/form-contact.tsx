@@ -123,7 +123,7 @@ export const FormContact = () => {
 						control={form.control}
 						render={({ field }) => (
 							<FormItem>
-								<FormLabel>Nos conte um pouco sobre seu escritório e qual é a sua real necessidade:</FormLabel>
+								<FormLabel>Conte um pouco sobre seu escritório e qual é a sua real necessidade:</FormLabel>
 								<FormControl>
 									<Textarea {...field} />
 								</FormControl>
