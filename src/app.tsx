@@ -18,16 +18,28 @@ import { FormContact } from './components/form-contact';
 export const App = () => {
 	return (
 		<main className="flex w-full flex-col base:pt-4 md:pt-8">
-			<Button className="fixed bottom-2 right-2 z-20" asChild>
-				<a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
-					<span className="base:hidden md:flex"> Fale conosco </span>
-					<img
-						src="/icons/whatsapp.png"
-						alt="whatsapp-icon"
-						className="size-6"
-					/>
-				</a>
-			</Button>
+				<Button
+  className="fixed bottom-4 right-4 z-20 bg-[#20ba5a] hover:bg-[#1aa64f] text-white font-semibold rounded-full px-5 py-3 shadow-2xl border-2 border-white transition-transform transform hover:scale-105 hover:brightness-110"
+  asChild
+>
+  <a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
+    <span className="hidden md:flex items-center gap-2">
+      <img
+        src="/icons/whatsapp.png"
+        alt="whatsapp-icon"
+        className="size-6"
+      />
+      Fale conosco
+    </span>
+    <span className="flex md:hidden">
+      <img
+        src="/icons/whatsapp.png"
+        alt="whatsapp-icon"
+        className="size-6"
+      />
+    </span>
+  </a>
+</Button>
 			<Header />
 			<AnimatedSection id="inicio" className="max-w-6xl mx-auto">
 				<Hero />
