@@ -12,7 +12,7 @@ export const Video = () => {
           src={LINK_VIDEO}
           controls
           className="w-full h-full rounded-xl"
-          autoPlay={true}
+          autoPlay={false}
           muted
         >
           Seu navegador não suporta o elemento de vídeo.
