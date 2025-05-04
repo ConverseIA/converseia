@@ -73,7 +73,6 @@ export const Plans = () => {
               {/* Exibe o botão "Fale conosco" apenas no terceiro card */}
               {index === 2 && (
                 <div className="mt-auto">
-                  {/* O chatbot será carregado apenas no terceiro card */}
                   <Button
                     className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-6 rounded-full mt-auto shadow-md transform transition-transform hover:scale-105"
                     asChild
@@ -87,6 +86,34 @@ export const Plans = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Botão flutuante do chatbot no canto inferior direito */}
+      <div className="fixed bottom-0 right-0 mb-6 mr-6">
+        <script>
+          (function(e, t, n) {
+            let a = document.createElement("ra-chatbot-widget");
+            a.id = "ra_wc_chatbot";
+            a.setAttribute("slug", "qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN");
+            document.body.appendChild(a);
+            
+            let d = e.scripts[e.scripts.length - 1],
+                r = e.createElement("script");
+
+            r.id = "ra_chatbot" + Math.floor(200 * Math.random());
+            r.defer = true;
+            r.src = "https://sitewidget.net/chatbot-sdk.js";
+
+            r.onload = r.onreadystatechange = function() {
+              let e = this.readyState;
+              if (!e || e === "complete" || e === "loaded") {
+                // Callback após o carregamento do script (se necessário)
+              }
+            };
+
+            d.parentElement.insertBefore(r, d.nextSibling);
+          })(document);
+        </script>
       </div>
     </div>
   );
