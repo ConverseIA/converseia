@@ -48,34 +48,34 @@ export const Plans = () => {
               )}
 
 			  {/* Exibe o botão "Fale conosco" apenas no terceiro card com a mesma cor */}
-        {index === 2 && (
+{index === 2 && (
   <div className="mt-auto">
-    {/* Aqui vai o código para carregar o chatbot */}
-    <script>
-      (function(e, t, n) {
+    {/* Usando useEffect para adicionar o script do chatbot apenas quando necessário */}
+    {useEffect(() => {
+      const script = document.createElement("script");
+      script.id = "ra_chatbot" + Math.floor(200 * Math.random());
+      script.defer = true;
+      script.src = "https://sitewidget.net/chatbot-sdk.js";
+
+      script.onload = () => {
         let a = document.createElement("ra-chatbot-widget");
         a.id = "ra_wc_chatbot";
         a.setAttribute("slug", "qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN");
         document.body.appendChild(a);
-        
-        let d = e.scripts[e.scripts.length - 1],
-            r = e.createElement("script");
+      };
 
-        r.id = "ra_chatbot" + Math.floor(200 * Math.random());
-        r.defer = true;
-        r.src = "https://sitewidget.net/chatbot-sdk.js";
+      document.body.appendChild(script);
 
-        r.onload = r.onreadystatechange = function() {
-          let e = this.readyState;
-          if (!e || e === "complete" || e === "loaded") {
-            // Callback após o carregamento do script (se necessário)
-          }
-        };
-
-        d.parentElement.insertBefore(r, d.nextSibling);
-      })(document);
-    </script>
-            </div>
+      return () => {
+        // Limpeza: remove o script quando o componente for desmontado
+        document.body.removeChild(script);
+        const chatbotWidget = document.getElementById("ra_wc_chatbot");
+        if (chatbotWidget) {
+          document.body.removeChild(chatbotWidget);
+        }
+      };
+    }, [])}
+  </div>
           ))}
         </div>
       </div>
