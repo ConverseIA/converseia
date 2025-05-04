@@ -3,26 +3,27 @@ import { Button } from './ui/button';
 import { useEffect } from 'react';
 
 export const Plans = () => {
+  // Hook para adicionar o script do chatbot quando o componente for montado
   useEffect(() => {
-    // Adiciona o script do chatbot quando o componente é montado
-    const script = document.createElement("script");
-    script.id = "ra_chatbot" + Math.floor(200 * Math.random());
+    const script = document.createElement('script');
+    script.id = 'ra_chatbot' + Math.floor(200 * Math.random());
     script.defer = true;
-    script.src = "https://sitewidget.net/chatbot-sdk.js";
+    script.src = 'https://sitewidget.net/chatbot-sdk.js';
 
+    // Quando o script carregar, criamos o widget do chatbot
     script.onload = () => {
-      let a = document.createElement("ra-chatbot-widget");
-      a.id = "ra_wc_chatbot";
-      a.setAttribute("slug", "qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN");
-      document.body.appendChild(a);
+      const chatbotWidget = document.createElement('ra-chatbot-widget');
+      chatbotWidget.id = 'ra_wc_chatbot';
+      chatbotWidget.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
+      document.body.appendChild(chatbotWidget);
     };
 
     document.body.appendChild(script);
 
-    // Limpeza: remove o script quando o componente for desmontado
+    // Limpeza do script e do chatbot quando o componente for desmontado
     return () => {
       document.body.removeChild(script);
-      const chatbotWidget = document.getElementById("ra_wc_chatbot");
+      const chatbotWidget = document.getElementById('ra_wc_chatbot');
       if (chatbotWidget) {
         document.body.removeChild(chatbotWidget);
       }
@@ -39,8 +40,8 @@ export const Plans = () => {
         <div className="grid base:grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-screen-lg">
           {PLANS_AVALIABLE.map((plans, index) => (
             <div
-              className="bg-gradient-to-b from-[#004bb5] to-[#003a8c] p-8 flex flex-col gap-6 rounded-xl shadow-xl transform transition-transform hover:scale-[1.05]"
               key={plans.title}
+              className="bg-gradient-to-b from-[#004bb5] to-[#003a8c] p-8 flex flex-col gap-6 rounded-xl shadow-xl transform transition-transform hover:scale-[1.05]"
             >
               <h3 className="text-center font-extrabold text-3xl text-white transition-colors duration-300 hover:text-yellow-400">
                 {plans.title}
@@ -90,30 +91,7 @@ export const Plans = () => {
 
       {/* Botão flutuante do chatbot no canto inferior direito */}
       <div className="fixed bottom-0 right-0 mb-6 mr-6">
-        <script>
-          (function(e, t, n) {
-            let a = document.createElement("ra-chatbot-widget");
-            a.id = "ra_wc_chatbot";
-            a.setAttribute("slug", "qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN");
-            document.body.appendChild(a);
-            
-            let d = e.scripts[e.scripts.length - 1],
-                r = e.createElement("script");
-
-            r.id = "ra_chatbot" + Math.floor(200 * Math.random());
-            r.defer = true;
-            r.src = "https://sitewidget.net/chatbot-sdk.js";
-
-            r.onload = r.onreadystatechange = function() {
-              let e = this.readyState;
-              if (!e || e === "complete" || e === "loaded") {
-                // Callback após o carregamento do script (se necessário)
-              }
-            };
-
-            d.parentElement.insertBefore(r, d.nextSibling);
-          })(document);
-        </script>
+        {/* O script será adicionado no useEffect, logo não é necessário aqui */}
       </div>
     </div>
   );
