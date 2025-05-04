@@ -15,31 +15,35 @@ import {
 } from './lib/constants';
 import { FormContact } from './components/form-contact';
 
-export const App = () => {
+export const metadata = {
+	title: 'Seu Site',
+	description: 'Descrição do seu site',
+  }
+  
+  export default function RootLayout({ children }: { children: ReactNode }) {
+	useEffect(() => {
+	  if (!document.getElementById('ra_wc_chatbot')) {
+		const widget = document.createElement('ra-chatbot-widget')
+		widget.id = 'ra_wc_chatbot'
+		widget.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN')
+		document.body.appendChild(widget)
+  
+		const script = document.createElement('script')
+		script.id = 'ra_chatbot_script'
+		script.defer = true
+		script.src = 'https://sitewidget.net/chatbot-sdk.js'
+		document.body.appendChild(script)
+	  }
+	}, [])
+  
 	return (
-		<main className="flex w-full flex-col base:pt-4 md:pt-8">
-				<Button
-  className="fixed bottom-4 right-4 z-20 bg-[#20ba5a] hover:bg-[#1aa64f] text-white font-semibold rounded-full px-5 py-3 shadow-2xl border-2 border-white transition-transform transform hover:scale-105 hover:brightness-110"
-  asChild
->
-  <a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
-    <span className="hidden md:flex items-center gap-2">
-      <img
-        src="/icons/whatsapp.png"
-        alt="whatsapp-icon"
-        className="size-6"
-      />
-      Fale conosco
-    </span>
-    <span className="flex md:hidden">
-      <img
-        src="/icons/whatsapp.png"
-        alt="whatsapp-icon"
-        className="size-6"
-      />
-    </span>
-  </a>
-</Button>
+	  <html lang="pt-br">
+		<body className={inter.className}>
+		  {children}
+		</body>
+	  </html>
+	)
+  }
 			<Header />
 			<AnimatedSection id="inicio" className="max-w-6xl mx-auto">
 				<Hero />

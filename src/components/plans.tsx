@@ -88,11 +88,5 @@ export const Plans = () => {
           ))}
         </div>
       </div>
-
-      {/* Botão flutuante do chatbot no canto inferior direito */}
-      <div className="fixed bottom-0 right-0 mb-6 mr-6">
-        {/* O script será adicionado no useEffect, logo não é necessário aqui */}
-      </div>
-    </div>
   );
 };
