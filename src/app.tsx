@@ -1,5 +1,5 @@
 // src/app.tsx
-'use client';  // Se estiver usando React 18+
+'use client';
 
 import { useEffect } from 'react';
 import { Header } from './components/header';
@@ -29,10 +29,20 @@ export default function App() {
       document.body.appendChild(widget);
 
       const script = document.createElement('script');
-      script.id = 'ra_chatbot_script';
+      script.id = 'ra_chatbot_' + Math.floor(200 * Math.random());
       script.defer = true;
       script.src = 'https://sitewidget.net/chatbot-sdk.js';
-      document.body.appendChild(script);
+
+      script.onload = script.onreadystatechange = function () {
+        const readyState = (this as any).readyState;
+        if (!readyState || readyState === 'complete' || readyState === 'loaded') {
+          // Callback opcional após o carregamento
+        }
+      };
+
+      const scripts = document.getElementsByTagName('script');
+      const lastScript = scripts[scripts.length - 1];
+      lastScript.parentNode?.insertBefore(script, lastScript.nextSibling);
     }
   }, []);
 
