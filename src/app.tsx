@@ -1,8 +1,7 @@
-'use client';
+// src/app.tsx
+'use client';  // Se estiver usando React 18+
 
-import { useEffect, ReactNode } from 'react';
-import { Inter } from 'next/font/google';
-
+import { useEffect } from 'react';
 import { Header } from './components/header';
 import { Hero } from './components/hero';
 import { Convertional } from './components/convertional';
@@ -21,9 +20,7 @@ import {
   LINK_NAVIGATE,
 } from './lib/constants';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function App() {
   useEffect(() => {
     if (!document.getElementById('ra_wc_chatbot')) {
       const widget = document.createElement('ra-chatbot-widget');
@@ -40,63 +37,60 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <html lang="pt-br">
-      <body className={inter.className}>
-        <Header />
-        <main>
-          <AnimatedSection id="inicio" className="max-w-6xl mx-auto">
-            <Hero />
-            <Convertional />
-          </AnimatedSection>
+    <>
+      <Header />
+      <main>
+        <AnimatedSection id="inicio" className="max-w-6xl mx-auto">
+          <Hero />
+          <Convertional />
+        </AnimatedSection>
 
-          <AnimatedSection className="w-full h-screen bg-dark-primary py-24" id="sobre">
-            <Video />
-          </AnimatedSection>
+        <AnimatedSection className="w-full h-screen bg-dark-primary py-24" id="sobre">
+          <Video />
+        </AnimatedSection>
 
-          <AnimatedSection id="recursos" className="w-full max-w-7xl mx-auto scroll-mt-24">
-            <Depoiment />
-          </AnimatedSection>
+        <AnimatedSection id="recursos" className="w-full max-w-7xl mx-auto scroll-mt-24">
+          <Depoiment />
+        </AnimatedSection>
 
-          <AnimatedSection className="size-full bg-dark-primary py-24">
-            <TechnologyIncorporte />
-          </AnimatedSection>
+        <AnimatedSection className="size-full bg-dark-primary py-24">
+          <TechnologyIncorporte />
+        </AnimatedSection>
 
-          <AnimatedSection className="w-full py-24 max-w-6xl mx-auto scroll-mt-24" id="planos">
-            <Plans />
-          </AnimatedSection>
+        <AnimatedSection className="w-full py-24 max-w-6xl mx-auto scroll-mt-24" id="planos">
+          <Plans />
+        </AnimatedSection>
 
-          <AnimatedSection className="w-full py-24 max-w-6xl mx-auto scroll-mt-24" id="contato">
-            <FormContact />
-          </AnimatedSection>
+        <AnimatedSection className="w-full py-24 max-w-6xl mx-auto scroll-mt-24" id="contato">
+          <FormContact />
+        </AnimatedSection>
 
-          <footer className="bg-dark-third flex items-center justify-center flex-col gap-4 py-4">
-            <img src="/elements/logo.png" alt="logo" className="h-12" />
-            <ul className="flex gap-4 font-bold flex-wrap justify-center">
-              {LINK_NAVIGATE.map((link) => (
-                <li key={link.href}>
-                  <a href={link.href} className="hover:text-primary transition-all">
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <div className="flex items-center gap-3">
-              <Button variant="outline" asChild>
-                <a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
-                  Contato
+        <footer className="bg-dark-third flex items-center justify-center flex-col gap-4 py-4">
+          <img src="/elements/logo.png" alt="logo" className="h-12" />
+          <ul className="flex gap-4 font-bold flex-wrap justify-center">
+            {LINK_NAVIGATE.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="hover:text-primary transition-all">
+                  {link.label}
                 </a>
-              </Button>
-              <a href={LINK_FOR_LINKEDIN} target="_blank" rel="noreferrer">
-                <img src="/elements/linkedin.svg" alt="linkedin" className="size-8" />
+              </li>
+            ))}
+          </ul>
+          <div className="flex items-center gap-3">
+            <Button variant="outline" asChild>
+              <a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
+                Contato
               </a>
-              <a href={LINK_FOR_INSTAGRAM} target="_blank" rel="noreferrer">
-                <img src="/elements/instagram.svg" alt="instagram" className="size-8" />
-              </a>
-            </div>
-          </footer>
-        </main>
-        {children}
-      </body>
-    </html>
+            </Button>
+            <a href={LINK_FOR_LINKEDIN} target="_blank" rel="noreferrer">
+              <img src="/elements/linkedin.svg" alt="linkedin" className="size-8" />
+            </a>
+            <a href={LINK_FOR_INSTAGRAM} target="_blank" rel="noreferrer">
+              <img src="/elements/instagram.svg" alt="instagram" className="size-8" />
+            </a>
+          </div>
+        </footer>
+      </main>
+    </>
   );
 }
