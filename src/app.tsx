@@ -33,11 +33,8 @@ export default function App() {
       script.defer = true;
       script.src = 'https://sitewidget.net/chatbot-sdk.js';
 
-      script.onload = script.onreadystatechange = function () {
-        const readyState = (this as any).readyState;
-        if (!readyState || readyState === 'complete' || readyState === 'loaded') {
-          // Callback opcional após o carregamento
-        }
+      script.onload = () => {
+        // Callback opcional após o carregamento
       };
 
       const scripts = document.getElementsByTagName('script');
