@@ -1,35 +1,9 @@
+'use client';
+
 import { LINK_CTA_WHATSAPP, PLANS_AVALIABLE } from '@/lib/constants';
 import { Button } from './ui/button';
-import { useEffect } from 'react';
 
 export const Plans = () => {
-  // Hook para adicionar o script do chatbot quando o componente for montado
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.id = 'ra_chatbot' + Math.floor(200 * Math.random());
-    script.defer = true;
-    script.src = 'https://sitewidget.net/chatbot-sdk.js';
-
-    // Quando o script carregar, criamos o widget do chatbot
-    script.onload = () => {
-      const chatbotWidget = document.createElement('ra-chatbot-widget');
-      chatbotWidget.id = 'ra_wc_chatbot';
-      chatbotWidget.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
-      document.body.appendChild(chatbotWidget);
-    };
-
-    document.body.appendChild(script);
-
-    // Limpeza do script e do chatbot quando o componente for desmontado
-    return () => {
-      document.body.removeChild(script);
-      const chatbotWidget = document.getElementById('ra_wc_chatbot');
-      if (chatbotWidget) {
-        document.body.removeChild(chatbotWidget);
-      }
-    };
-  }, []);
-
   return (
     <div className="space-y-8">
       <h1 className="text-white text-center font-bold text-4xl">
@@ -59,23 +33,21 @@ export const Plans = () => {
                 ))}
               </ul>
 
-              {/* Exibe o botão "Teste grátis 7 dias" nos dois primeiros cards */}
               {index < 2 && (
                 <Button
                   className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-6 rounded-full mt-auto shadow-md transform transition-transform hover:scale-105"
                   asChild
                 >
-                  <a href={'https://forms.gle/83EQjA4E7xEL9kSPA'} target="_blank" rel="noreferrer">
+                  <a href="https://forms.gle/83EQjA4E7xEL9kSPA" target="_blank" rel="noreferrer">
                     Teste grátis 7 dias
                   </a>
                 </Button>
               )}
 
-              {/* Exibe o botão "Fale conosco" apenas no terceiro card */}
               {index === 2 && (
                 <div className="mt-auto">
                   <Button
-                    className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-6 rounded-full mt-auto shadow-md transform transition-transform hover:scale-105"
+                    className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-6 rounded-full shadow-md transform transition-transform hover:scale-105"
                     asChild
                   >
                     <a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
@@ -88,5 +60,6 @@ export const Plans = () => {
           ))}
         </div>
       </div>
+    </div>
   );
 };
