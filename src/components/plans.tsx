@@ -48,16 +48,21 @@ export const Plans = () => {
               )}
 
 			  {/* Exibe o botão "Fale conosco" apenas no terceiro card com a mesma cor */}
-			  {index === 2 && (
-                <Button 
-				  className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-6 rounded-full mt-auto shadow-md transform transition-transform hover:scale-105"
-				  asChild
-				>
-                  <a href={LINK_CTA_WHATSAPP} target="_blank" rel="noreferrer">
-                    Fale conosco
-                  </a>
-                </Button>
-              )}
+        {index === 2 && (
+  <Button 
+    className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-3 px-6 rounded-full mt-auto shadow-md transform transition-transform hover:scale-105"
+    onClick={() => {
+      const chatbot = document.getElementById("ra_wc_chatbot");
+      if (chatbot) {
+        chatbot.scrollIntoView({ behavior: "smooth" });
+      } else {
+        alert("O assistente ainda está carregando. Tente novamente em instantes.");
+      }
+    }}
+  >
+    Fale com nosso assistente
+  </Button>
+)}
             </div>
           ))}
         </div>
