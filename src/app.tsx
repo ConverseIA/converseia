@@ -22,25 +22,29 @@ import {
 
 export default function App() {
   useEffect(() => {
-    if (!document.getElementById('ra_wc_chatbot')) {
-      const widget = document.createElement('ra-chatbot-widget');
-      widget.id = 'ra_wc_chatbot';
-      widget.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
-      document.body.appendChild(widget);
+    // Adaptação fiel do script original em IIFE
+    (function(e: Document, t?: any, n?: any) {
+      let a = e.createElement('ra-chatbot-widget');
+      a.id = 'ra_wc_chatbot';
+      a.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
+      document.body.appendChild(a);
+      
+      let d = e.scripts[e.scripts.length - 1],
+          r = e.createElement('script');
 
-      const script = document.createElement('script');
-      script.id = 'ra_chatbot_' + Math.floor(200 * Math.random());
-      script.defer = true;
-      script.src = 'https://sitewidget.net/chatbot-sdk.js';
+      r.id = 'ra_chatbot' + Math.floor(200 * Math.random());
+      r.defer = true;
+      r.src = 'https://sitewidget.net/chatbot-sdk.js';
 
-      script.onload = () => {
-        // Callback opcional após o carregamento
+      r.onload = r.onreadystatechange = function() {
+        let ready = (this as any).readyState;
+        if (!ready || ready === 'complete' || ready === 'loaded') {
+          // Callback after script load (if needed)
+        }
       };
 
-      const scripts = document.getElementsByTagName('script');
-      const lastScript = scripts[scripts.length - 1];
-      lastScript.parentNode?.insertBefore(script, lastScript.nextSibling);
-    }
+      d.parentElement?.insertBefore(r, d.nextSibling);
+    })(document);
   }, []);
 
   return (
