@@ -22,7 +22,7 @@ import {
 
 export default function App() {
   useEffect(() => {
-    // IIFE adaptado sem parâmetros não utilizados e correção TS para onreadystatechange
+    // IIFE adaptado usando event listeners para evitar conflito de tipos TS
     (function(e: Document) {
       const a = e.createElement('ra-chatbot-widget');
       a.id = 'ra_wc_chatbot';
@@ -36,15 +36,16 @@ export default function App() {
       r.defer = true;
       r.src = 'https://sitewidget.net/chatbot-sdk.js';
 
-      const callback = function(this: HTMLScriptElement) {
-        const ready = (this as any).readyState;
+      // Usa addEventListener para load e readyStateChange
+      const onLoadOrReady = () => {
+        // Verifica readyState caso necessário
+        const ready = (r as any).readyState;
         if (!ready || ready === 'complete' || ready === 'loaded') {
           // Callback após carregamento
         }
       };
-
-      r.onload = callback;
-      (r as any).onreadystatechange = callback;
+      r.addEventListener('load', onLoadOrReady);
+      r.addEventListener('readystatechange', onLoadOrReady as EventListener);
 
       d.parentElement?.insertBefore(r, d.nextSibling);
     })(document);
