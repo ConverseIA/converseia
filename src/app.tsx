@@ -2,6 +2,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import Script from 'next/script';
 import { Header } from './components/header';
 import { Hero } from './components/hero';
 import { Convertional } from './components/convertional';
@@ -21,38 +22,41 @@ import {
 } from './lib/constants';
 
 export default function App() {
-  useEffect(() => {
-    // IIFE adaptado usando event listeners para evitar conflito de tipos TS
-    (function(e: Document) {
-      const a = e.createElement('ra-chatbot-widget');
-      a.id = 'ra_wc_chatbot';
-      a.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
-      e.body.appendChild(a);
-
-      const d = e.scripts[e.scripts.length - 1];
-      const r = e.createElement('script');
-
-      r.id = 'ra_chatbot' + Math.floor(200 * Math.random());
-      r.defer = true;
-      r.src = 'https://sitewidget.net/chatbot-sdk.js';
-
-      // Usa addEventListener para load e readyStateChange
-      const onLoadOrReady = () => {
-        // Verifica readyState caso necessário
-        const ready = (r as any).readyState;
-        if (!ready || ready === 'complete' || ready === 'loaded') {
-          // Callback após carregamento
-        }
-      };
-      r.addEventListener('load', onLoadOrReady);
-      r.addEventListener('readystatechange', onLoadOrReady as EventListener);
-
-      d.parentElement?.insertBefore(r, d.nextSibling);
-    })(document);
-  }, []);
-
   return (
     <>
+      {/* Carrega o SDK do chatbot */}
+      <Script
+        id="ra-chatbot-sdk"
+        src="https://sitewidget.net/chatbot-sdk.js"
+        strategy="afterInteractive"
+      />
+
+      {/* Inicializa o widget conforme IIFE original */}
+      <Script id="ra-chatbot-init" strategy="afterInteractive">
+        {`(function(e, t, n) {
+          let a = document.createElement("ra-chatbot-widget");
+          a.id = "ra_wc_chatbot";
+          a.setAttribute("slug", "qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN");
+          document.body.appendChild(a);
+          
+          let d = e.scripts[e.scripts.length - 1],
+              r = e.createElement("script");
+
+          r.id = "ra_chatbot" + Math.floor(200 * Math.random());
+          r.defer = true;
+          r.src = "https://sitewidget.net/chatbot-sdk.js";
+
+          r.onload = r.onreadystatechange = function() {
+            let e = this.readyState;
+            if (!e || e === "complete" || e === "loaded") {
+              // Callback after script load (if needed)
+            }
+          };
+
+          d.parentElement.insertBefore(r, d.nextSibling);
+        })(document);`}
+      </Script>
+
       <Header />
       <main>
         <AnimatedSection id="inicio" className="max-w-6xl mx-auto">
