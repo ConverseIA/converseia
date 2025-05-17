@@ -22,26 +22,29 @@ import {
 
 export default function App() {
   useEffect(() => {
-    // Adaptação fiel do script original em IIFE
-    (function(e: Document, t?: any, n?: any) {
-      let a = e.createElement('ra-chatbot-widget');
+    // IIFE adaptado sem parâmetros não utilizados e correção TS para onreadystatechange
+    (function(e: Document) {
+      const a = e.createElement('ra-chatbot-widget');
       a.id = 'ra_wc_chatbot';
       a.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
-      document.body.appendChild(a);
-      
-      let d = e.scripts[e.scripts.length - 1],
-          r = e.createElement('script');
+      e.body.appendChild(a);
+
+      const d = e.scripts[e.scripts.length - 1];
+      const r = e.createElement('script');
 
       r.id = 'ra_chatbot' + Math.floor(200 * Math.random());
       r.defer = true;
       r.src = 'https://sitewidget.net/chatbot-sdk.js';
 
-      r.onload = r.onreadystatechange = function() {
-        let ready = (this as any).readyState;
+      const callback = function(this: HTMLScriptElement) {
+        const ready = (this as any).readyState;
         if (!ready || ready === 'complete' || ready === 'loaded') {
-          // Callback after script load (if needed)
+          // Callback após carregamento
         }
       };
+
+      r.onload = callback;
+      (r as any).onreadystatechange = callback;
 
       d.parentElement?.insertBefore(r, d.nextSibling);
     })(document);
