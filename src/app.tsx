@@ -2,7 +2,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import Script from 'next/script';
 import { Header } from './components/header';
 import { Hero } from './components/hero';
 import { Convertional } from './components/convertional';
@@ -22,41 +21,27 @@ import {
 } from './lib/constants';
 
 export default function App() {
+  useEffect(() => {
+    // Cria widget e carrega SDK diretamente no body para garantir execução
+    (function(e: Document) {
+      const a = e.createElement('ra-chatbot-widget');
+      a.id = 'ra_wc_chatbot';
+      a.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
+      e.body.appendChild(a);
+
+      const r = e.createElement('script');
+      r.id = 'ra_chatbot_' + Math.floor(200 * Math.random());
+      r.defer = true;
+      r.src = 'https://sitewidget.net/chatbot-sdk.js';
+      r.onload = () => {
+        // SDK carregado: pop deve aparecer
+      };
+      e.body.appendChild(r);
+    })(document);
+  }, []);
+
   return (
     <>
-      {/* Carrega o SDK do chatbot */}
-      <Script
-        id="ra-chatbot-sdk"
-        src="https://sitewidget.net/chatbot-sdk.js"
-        strategy="afterInteractive"
-      />
-
-      {/* Inicializa o widget conforme IIFE original */}
-      <Script id="ra-chatbot-init" strategy="afterInteractive">
-        {`(function(e, t, n) {
-          let a = document.createElement("ra-chatbot-widget");
-          a.id = "ra_wc_chatbot";
-          a.setAttribute("slug", "qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN");
-          document.body.appendChild(a);
-          
-          let d = e.scripts[e.scripts.length - 1],
-              r = e.createElement("script");
-
-          r.id = "ra_chatbot" + Math.floor(200 * Math.random());
-          r.defer = true;
-          r.src = "https://sitewidget.net/chatbot-sdk.js";
-
-          r.onload = r.onreadystatechange = function() {
-            let e = this.readyState;
-            if (!e || e === "complete" || e === "loaded") {
-              // Callback after script load (if needed)
-            }
-          };
-
-          d.parentElement.insertBefore(r, d.nextSibling);
-        })(document);`}
-      </Script>
-
       <Header />
       <main>
         <AnimatedSection id="inicio" className="max-w-6xl mx-auto">
