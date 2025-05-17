@@ -22,23 +22,29 @@ import {
 
 export default function App() {
   useEffect(() => {
-    // Cria widget e carrega SDK diretamente no body para garantir execução
-    (function(e: Document) {
-      const a = e.createElement('ra-chatbot-widget');
-      a.id = 'ra_wc_chatbot';
-      a.setAttribute('slug', 'qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN');
-      e.body.appendChild(a);
+    // IIFE fiel ao original
+    (function(e, t, n) {
+      const a = document.createElement("ra-chatbot-widget");
+      a.id = "ra_wc_chatbot";
+      a.setAttribute("slug", "qs0VjV3e8DoFLrakFnU8jdUHuSzVyp8q7W4SKBkN");
+      document.body.appendChild(a);
 
-      const r = e.createElement('script');
-      r.id = 'ra_chatbot_' + Math.floor(200 * Math.random());
+      const d = e.scripts[e.scripts.length - 1];
+      const r = e.createElement("script");
+      r.id = "ra_chatbot" + Math.floor(200 * Math.random());
       r.defer = true;
-      r.src = 'https://sitewidget.net/chatbot-sdk.js';
-      r.onload = () => {
-        // SDK carregado: pop deve aparecer
+      r.src = "https://sitewidget.net/chatbot-sdk.js";
+
+      r.onload = r.onreadystatechange = function() {
+        const readyState = (this as any).readyState;
+        if (!readyState || readyState === "complete" || readyState === "loaded") {
+          // Callback after script load (if needed)
+        }
       };
-      e.body.appendChild(r);
+
+      d.parentElement?.insertBefore(r, d.nextSibling);
     })(document);
-  }, []);
+  }, []); // <-- fechando o useEffect aqui
 
   return (
     <>
