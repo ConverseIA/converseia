@@ -20,7 +20,7 @@ export const CHARGES_AVALIABLE = [
 		],
 	},
 	{
-		title: 'SDR - Pré Vendor(a)',
+		title: 'SDR - Pré Vendedor(a)',
 		list: [
 			'Investiga a viabilidade do caso',
 			'Entende a situação do potencial cliente',
