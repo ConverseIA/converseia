@@ -14,8 +14,6 @@ export const CHARGES_AVALIABLE = [
 		list: [
 			'Compreende a demanda inicial',
 			'Encaminha para o setor ou Agente de IA responsável',
-			'Agenda, cancela e remarcar reuniões',
-			'Organiza a Agenda da Equipe',
 			
 		],
 	},
@@ -45,6 +43,21 @@ export const CHARGES_AVALIABLE = [
 			'Compreende a demanda inicial',
 			'Encaminha para o setor ou Agente de IA responsável',
 			'Recolhe o contato e faz contato ativo no whatsapp',
+		],
+	},
+	{
+		title: 'Secretária Agendamento',
+		list: [
+			'Agenda, cancela e remarcar reuniões',
+			'Organiza a Agenda da Equipe',
+		],
+	},
+	{
+		title: 'Follow UP',
+		list: [
+		'Envia lembretes automáticos para leads que ainda não responderam',
+		'Realiza tentativas de retorno com abordagens personalizadas',
+		'Retoma conversas pausadas de forma contextualizada',
 		],
 	},
 ];
