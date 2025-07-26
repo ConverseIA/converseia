@@ -37,9 +37,9 @@ export const Plans = () => {
           {PLANS_AVALIABLE.map((plan, index) => {
             // 4. Lógica para calcular o preço dinamicamente
             const currentPeriod = plan.periods ? plan.periods[selectedPeriodIndex] : null;
-            const calculatedPrice = currentPeriod
-              ? (plan.monthlyPrice * currentPeriod.months * (1 - currentPeriod.discount)).toFixed(2)
-              : null;
+const calculatedPrice = currentPeriod && plan.monthlyPrice
+  ? (plan.monthlyPrice * currentPeriod.months * (1 - currentPeriod.discount)).toFixed(2)
+  : null;
 
             return (
               <div
