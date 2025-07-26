@@ -6,12 +6,6 @@ export function getInitials(name: string): string {
 	return initials;
 }
 
-// Função auxiliar para calcular o preço com desconto
-const calculatePrice = (basePrice: number, months: number, discount: number) => {
-  const monthlyPrice = basePrice * (1 - discount);
-  return (monthlyPrice * months).toFixed(2);
-};
-
 export const PLANS_AVALIABLE = [
   {
     title: 'Escritório Essencial',
