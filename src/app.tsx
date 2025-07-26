@@ -8,7 +8,7 @@ import { Convertional } from './components/convertional';
 import { AnimatedSection } from './components/animate-section';
 import { Video } from './components/video';
 import { Depoiment } from './components/depoiment';
-import { TechnologyIncorporte } from './components/TechnologyIncorporte';
+// import { TechnologyIncorporte } from './components/TechnologyIncorporte'; // LINHA 1: IMPORTAÇÃO COMENTADA
 import { Plans } from './components/plans';
 import { FormContact } from './components/form-contact';
 import { Button } from './components/ui/button';
@@ -58,7 +58,7 @@ export default function App() {
         </AnimatedSection>
 
         <AnimatedSection className="size-full bg-dark-primary py-24">
-          <TechnologyIncorporte />
+          {/* <TechnologyIncorporte /> */} {/* LINHA 2: COMPONENTE COMENTADO */}
         </AnimatedSection>
 
         <AnimatedSection className="w-full py-24 max-w-6xl mx-auto scroll-mt-24" id="planos">
